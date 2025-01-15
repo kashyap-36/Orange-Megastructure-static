@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orange Mega Structure</title>
+
+    <!-- favicon icon -->
+    <!-- <link rel="icon" type="image/png" href="assets/images/logo.png" /> -->
+
+    <!-- font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font Judson-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- custom Tailwind css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                    fontFamily: {
+                        poppins: ["Poppins", "serif"],
+                        judson: ["Judson", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <script src="assets/js/main.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Hero section start-->
+    <div class="relative h-screen overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style="background-image: url('assets/images/index-hero.png')">
+            <div class="absolute inset-0 bg-[#212121]/70"></div>
+        </div>
+
+        <!-- Top Header -->
+        <header class="relative z-20 backdrop-blur-sm">
+            <div class="max-w-[1440px] mx-auto py-7">
+                <div class="flex items-center justify-between ">
+                    <!-- Menu Button -->
+                    <button id="menuBtn"
+                        class="flex items-center space-x-3 rounded-full border border-white px-5 py-3 text-white backdrop-blur-sm transition-all hover:bg-black/30">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.6665 3.89742C12.5521 3.89742 13.4949 3.89742 14.0807 4.49822C14.6665 5.09903 14.6665 6.06601 14.6665 7.99998C14.6665 9.93395 14.6665 10.9009 14.0807 11.5017C13.4949 12.1025 12.5521 12.1025 10.6665 12.1025L5.33317 12.1025C3.44755 12.1025 2.50474 12.1025 1.91896 11.5017C1.33317 10.9009 1.33317 9.93395 1.33317 7.99998C1.33317 6.06601 1.33317 5.09903 1.91896 4.49822C2.50474 3.89742 3.44755 3.89742 5.33317 3.89742L10.6665 3.89742Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.4998 1.84613C13.4998 2.12936 13.276 2.35895 12.9998 2.35895L2.99984 2.35895C2.72369 2.35895 2.49984 2.12936 2.49984 1.84613C2.49984 1.56291 2.72369 1.33331 2.99984 1.33331L12.9998 1.33331C13.276 1.33331 13.4998 1.56291 13.4998 1.84613ZM13.4998 14.1538C13.4998 14.437 13.276 14.6666 12.9998 14.6666L2.99984 14.6666C2.72369 14.6666 2.49984 14.437 2.49984 14.1538C2.49984 13.8706 2.72369 13.641 2.99984 13.641L12.9998 13.641C13.276 13.641 13.4998 13.8706 13.4998 14.1538Z"
+                                fill="white" />
+                        </svg>
+                        <span>Menu</span>
+                    </button>
+
+                    <!-- Logo -->
+                    <div class="text-center">
+                        <img src="assets/images/logo.png" alt="">
+                    </div>
+
+                    <!-- Booking Button -->
+                    <button id="menuBtn"
+                        class="flex items-center space-x-3 rounded-full border border-white px-4 py-3 text-white backdrop-blur-sm transition-all hover:bg-black/30">
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.7159 1.12767C2.16045 1.58865 2.01415 2.36895 1.72154 3.92954L1.22154 6.5962C0.810077 8.79066 0.604346 9.8879 1.20416 10.6106C1.80397 11.3334 2.92032 11.3334 5.15303 11.3334H8.84695C11.0797 11.3334 12.196 11.3334 12.7958 10.6106C13.3956 9.8879 13.1899 8.79066 12.7784 6.5962L12.2784 3.92953C11.9858 2.36894 11.8395 1.58865 11.2841 1.12767C10.7286 0.666687 9.93473 0.666687 8.34695 0.666687H5.65303C4.06524 0.666687 3.27135 0.666687 2.7159 1.12767ZM5.58548 3.16673C5.79163 3.75 6.34793 4.16669 7.00025 4.16669C7.65258 4.16669 8.20887 3.75 8.41503 3.16673C8.50705 2.90637 8.79271 2.76991 9.05307 2.86193C9.31343 2.95396 9.44989 3.23962 9.35787 3.49998C9.01491 4.4703 8.08955 5.16669 7.00025 5.16669C5.91096 5.16669 4.9856 4.4703 4.64264 3.49998C4.55061 3.23962 4.68708 2.95396 4.94743 2.86193C5.20779 2.76991 5.49345 2.90637 5.58548 3.16673Z"
+                                fill="white" />
+                        </svg>
+
+                        <span>Booking</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="border-y border-white/50 backdrop-blur-sm">
+                <div class="container mx-auto px-4">
+                    <ul class="flex justify-center flex-wrap space-x-14 py-5">
+                        <li><a href="index.html" class="nav-link text-[15px] text-white hover:text-white/90">HOME</a>
+                        </li>
+                        <li><a href="about.html" class="nav-link text-[15px] text-white hover:text-white/90">ABOUT
+                                US</a></li>
+                        <li><a href="stay.html" class="nav-link text-[15px] text-white hover:text-white/90">STAY</a>
+                        </li>
+                        <li><a href="dining.html" class="nav-link text-[15px] text-white hover:text-white/90">DINING</a>
+                        </li>
+                        <li><a href="mitting.html" class="nav-link text-[15px] text-white hover:text-white/90">MEETING &
+                                CONVENTIONS</a></li>
+                        <li><a href="faq.html" class="nav-link text-[15px] text-white hover:text-white/90">FAQ'S</a>
+                        </li>
+                        <li><a href="contact.html" class="nav-link text-[15px] text-white hover:text-white/90">CONTACT
+                                US</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Mobile Menu -->
+        <!-- <div id="mobileMenu"
+            class="fixed inset-0 z-50 transform bg-black/95 transition-transform duration-300 ease-in-out menu-closed">
+            <div class="flex h-full flex-col">
+                <div class="flex justify-end p-6">
+                    <button id="closeMenuBtn" class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-center flex-1 space-y-8">
+                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">HOME</a>
+                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">ABOUT US</a>
+                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">STAY</a>
+                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">DINING</a>
+                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">MEETING &
+                        CONVENTIONS</a>
+                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">FAQ'S</a>
+                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">CONTACT US</a>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Hero Content -->
+        <main class="relative z-10 flex h-[50vh] flex-col gap-y-11 items-center justify-center px-4 text-center">
+            <h1 class="mb-4 text-5xl font-bold text-white md:text-6xl lg:text-7xl">
+                Orange Megastructure Llp
+            </h1>
+            <p class="text-white/90 text-4xl">
+                Your Favourite Place. Our Family Story.
+            </p>
+        </main>
+
+        <!-- Hotels Info Button -->
+        <div class="absolute bottom-0 left-[16%] z-10 -translate-x-1/2">
+            <div class="relative">
+                <svg width="168" height="168" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="">
+                    <mask id="mask0_48_39319" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                        width="168" height="168">
+                        <path d="M168 0H0V168H168V0Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_48_39319)">
+                        <path opacity="0.5"
+                            d="M83.2111 153.321C45.8555 157.064 16.057 129.416 16.7114 91.6197C17.3658 53.8234 48.2269 20.0963 85.5825 16.3528C122.938 12.6093 152.737 40.2576 152.082 78.0539C151.428 115.85 120.567 149.577 83.2111 153.321Z"
+                            stroke="#E49E60" stroke-width="0.811594" />
+                        <path opacity="0.5"
+                            d="M93.2683 15.7648C130.777 17.3642 156.971 48.9906 151.724 86.3437C146.478 123.697 111.764 152.726 74.255 151.127C36.7464 149.527 10.5522 117.901 15.799 80.5476C21.0457 43.1945 55.7597 14.1654 93.2683 15.7648Z"
+                            stroke="#E49E60" stroke-width="0.811594" />
+                        <path opacity="0.5"
+                            d="M74.4671 15.9118C111.307 8.6822 145.308 33.073 150.345 70.3433C155.381 107.614 129.56 143.744 92.7195 150.974C55.8795 158.203 21.8788 133.812 16.8421 96.5421C11.8053 59.2718 37.6271 23.1413 74.4671 15.9118Z"
+                            stroke="#FF5800" stroke-width="0.811594" />
+                    </g>
+                </svg>
+                <button class="absolute top-1/3 left-1/3">
+                    <div class="flex flex-col items-center text-white">
+                        <span class="text-lg">Hotels</span>
+                        <span class="text-lg">Info</span>
+                    </div>
+                </button>
+            </div>
+
+
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 z-10 -translate-x-1/2">
+            <div class="scroll-indicator">
+                <svg width="85" height="265" viewBox="0 0 85 265" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line opacity="0.7" x1="41" y1="-4.37114e-08" x2="41" y2="181" stroke="url(#paint0_linear_48_39337)"
+                        stroke-width="2" stroke-dasharray="10 10" />
+                    <circle opacity="0.7" cx="42.5" cy="222.5" r="41.5" fill="#4C4139" stroke="#FF894A"
+                        stroke-width="2" />
+                    <g opacity="0.7">
+                        <path
+                            d="M42.9999 197C33.2924 197 25.395 205.021 25.395 214.881V229.12C25.395 238.979 33.2924 247 42.9999 247C52.7068 247 60.6048 239.003 60.6048 229.174V214.881C60.6048 205.021 52.7068 197 42.9999 197ZM57.2935 229.174C57.2935 237.178 50.8817 243.689 42.9999 243.689C35.1186 243.689 28.7063 237.153 28.7063 229.119V214.881C28.7063 206.847 35.1186 200.311 42.9999 200.311C50.8818 200.311 57.2935 206.847 57.2935 214.881V229.174Z"
+                            fill="#FF894A" />
+                        <path
+                            d="M42.9999 210.687C42.0854 210.687 41.3442 211.428 41.3442 212.342V218.137C41.3442 219.051 42.0854 219.793 42.9999 219.793C43.9144 219.793 44.6556 219.051 44.6556 218.137V212.342C44.6556 211.428 43.9144 210.687 42.9999 210.687Z"
+                            fill="#FF894A" />
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_48_39337" x1="39.5036" y1="178.692" x2="39.5036" y2="50.4426"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FF894A" />
+                            <stop offset="0.997597" stop-color="#FF894A" stop-opacity="0.12" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- Hero section end-->
+    <!-- Services section Start-->
+    <section class="py-28 bg-[#FFEDE3] ">
+        <div class="max-w-[1440px] mx-auto bg-cover bg-center bg-no-repeat py-28 relative"
+            style="background-image: url('assets/images/Rectangle\ 5.jpg')">
+            <div class="border border-white w-[533px] mx-auto p-6 relative z-10">
+                <div class="bg-white p-5 ">
+                    <div class="border border-black/20 p-5 text-center">
+                        <ul class="flex flex-col gap-y-7 py-3 text-[#333333]">
+                            <li class="text-sm md:text-lg">
+                                Largest Inventory of twin bedded <br> room in the city
+                            </li>
+                            <li class="text-sm md:text-lg">
+                                Carved Niche in exotic food serving
+                            </li>
+                            <li class="text-sm md:text-lg">
+                                170 well-appointed Luxurious Rooms
+                            </li>
+                            <li class="text-sm md:text-lg">
+                                1 km away from Surat Airport
+                            </li>
+                            <li class="text-sm md:text-lg">
+                                Exclusive Restaurants: Cafe Piano, Crystal Lounge, Ziba, Mr. and Mrs. Somani
+                            </li>
+                            <li class="text-sm md:text-lg">
+                                Complimentary Wi-Fi
+                            </li>
+                            <li class="text-sm md:text-lg">
+                                Orange Megastructure LLP Club
+                            </li>
+                            <li class="text-sm md:text-lg">
+                                World Class Movie Theatre
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services section end-->
+    <!-- Aboutus section Start-->
+    <section class="about-us bg-cover bg-center bg-no-repeat py-36"
+        style="background-image: url('assets/images/bg-about-cp.png')">
+        <div class="max-w-[940px] mx-auto">
+            <div class="text-center">
+                <h2 class="mb-4 text-5xl font-bold text-white md:text-6xl lg:text-7xl">
+                    About Us
+                </h2>
+                <p class="text-white/90 text-[25px] mt-14">Welcome to orange Megastructure llp, your home away from home
+                    in the
+                    heart
+                    of orange Megastructure llp. Nestled amidst the bustling streets and vibrant culture of our city,
+                    orange
+                    Megastructure llp offers a serene and luxurious escape for both leisure and business travelers.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Aboutus section end-->
+    <!-- Packages section start-->
+    <section class="packages bg-[#FFEDE3] relative overflow-hidden pt-24 pb-6">
+        <h2 class="text-[75px] font-semibold text-[#333333] text-center">Stay Packages</h2>
+        <div
+            class="absolute text-[#333333] text-[10rem] md:text-[155px] font-bold top-1/2 left-16 -translate-y-1/2 -translate-x-1/4 opacity-20 hidden md:block">
+            Pac
+        </div>
+        <div
+            class="absolute text-[#333333] text-[10rem] md:text-[155px] font-bold top-1/2 right-14 -translate-y-1/2 translate-x-1/4 opacity-20 hidden md:block">
+            Sta
+        </div>
+        <div class="max-w-[1440px] mx-auto my-16  text-center">
+            <div class="grid grid-cols-2 gap-5">
+                <div class="relative p-5 inset-0 bg-cover bg-center bg-no-repeat"
+                    style="background-image: url('assets/images/stay-bg.png')">
+                    <div class="absolute inset-0 bg-[#212121]/60"></div>
+                    <div class="relative z-10 border border-white py-28 text-center text-white">
+                        <h3 class="text-6xl font-medium">Stay</h3>
+                        <p class="text-center text-[25px] mt-10 font-normal">The Hotel Offer 170 Luxuious Rooms And <br>
+                            Suites In
+                            Different Categories.</p>
+                        <button
+                            class="rounded-full border border-white px-5 py-3 text-white mt-20 transition-all hover:bg-black/30">
+                            <span>Explore</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative p-5 inset-0 bg-cover bg-center bg-no-repeat"
+                    style="background-image: url('assets/images/dining-bg.png')">
+                    <div class="absolute inset-0 bg-[#212121]/60"></div>
+                    <div class="relative z-10 border border-white py-28 text-center text-white">
+                        <h3 class="text-6xl font-medium">Dining</h3>
+                        <p class="text-center text-[25px] mt-10 font-normal">Known For Scrumptious Taste, Explore <br>
+                            Various Dining Options We Offer...</p>
+                        <button
+                            class="rounded-full border border-white px-5 py-3 text-white mt-20 transition-all hover:bg-black/30">
+                            <span>Explore</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="rounded-full border border-[#333333] px-5 py-3 text-[#333333] mt-10 transition-all hover:bg-black/10">
+                <span>View More</span>
+            </button>
+        </div>
+    </section>
+    <!-- Packages section end-->
+    <!-- Videos section Start-->
+    <section class="py-20">
+        <h2 class="text-[75px] font-semibold text-[#333333] text-center">Videos</h2>
+        <div class="max-w-[1440px] mx-auto">
+            <div class="products__row flex mt-10">
+                <div class="product__col group relative flex-1 overflow-hidden transition-all duration-500 hover:flex-[1.2] bg-cover bg-center bg-no-repeat min-h-screen"
+                    style="background-image: url('assets/images/bg-video-1.jpg')">
+                    <div class="absolute inset-0 bg-[#212121]/60 transition-opacity duration-300">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex flex-col justify-center items-center text-center z-10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-[25px] font-normal px-20">
+                            We are especially proud of the thermal relaxation pools at the Hotel & Spa Resort Kaskady.
+                        </p>
+                        <div
+                            class="h-[80px] w-[80px] bg-[#D86C38]/20 rounded-full flex items-center justify-center mx-auto mt-10 scale-animation">
+                            <div
+                                class="h-[60px] w-[60px] bg-[#D86C38] rounded-full flex items-center justify-center hover:cursor-pointer">
+                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.4086 7.35258C19.5305 8.50647 19.5305 11.4935 17.4086 12.6474L4.59662 19.6145C2.53435 20.736 -1.03121e-07 19.2763 0 16.9671L6.22253e-07 3.0329C7.25375e-07 0.723683 2.53435 -0.735977 4.59661 0.385476L17.4086 7.35258Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center mx-auto mt-32">
+                            <svg width="81" height="85" viewBox="0 0 81 85" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.83591 42.6548L7.38218 36.8628C7.53329 36.5189 7.69927 36.1817 7.87965 35.8522C8.94165 33.9103 10.6845 32.4483 12.7868 31.7355C14.8782 31.0248 17.1596 31.1201 19.1845 32.0027L20.1657 32.4294L21.4195 29.5771L21.42 29.576L22.3439 27.4747C23.1333 25.6792 24.5769 24.3016 26.4088 23.596C28.2317 22.894 30.2148 22.9449 31.9943 23.7392L35.25 25.1497C35.8523 24.2929 36.5837 23.6392 37.4366 23.1977C39.2181 22.2758 41.3612 22.3533 43.8067 23.4285L46.1364 24.4526L49.1521 17.5926C50.3796 14.8 52.6581 12.8838 55.4028 12.3352C57.9831 11.8194 60.6103 12.5494 62.4314 14.2875C65.1641 16.8954 65.9492 20.8111 64.4331 24.2597L53.0096 50.4091C53.9661 50.2155 54.974 50.127 55.9969 50.1519C58.6538 50.2174 61.0427 51.0623 62.6423 52.4868C62.7473 52.5549 62.846 52.6355 62.9364 52.7286C64.544 54.3841 65.3364 56.3867 65.2286 58.5196C65.0936 61.1853 63.5709 63.814 60.8252 66.1219C60.8113 66.1336 60.7972 66.1451 60.7828 66.1563L37.301 84.6373C37.0599 84.8273 36.7716 84.9481 36.4671 84.9868C36.1626 85.0254 35.8533 84.9805 35.5724 84.8568L1.9327 70.0686C1.64822 69.9436 1.40364 69.7427 1.22575 69.4879C1.04787 69.2331 0.94355 68.9343 0.924217 68.6241L0.74118 65.6928C0.250145 57.8318 1.66602 49.8654 4.83591 42.6548ZM4.12086 65.4818L4.23972 67.3835L36.0048 81.3479L58.6661 63.5125C60.6323 61.8538 61.7614 60.0205 61.846 58.3484C61.9009 57.2644 61.5294 56.2549 60.741 55.3433C60.6841 55.2981 60.6296 55.2488 60.5778 55.1955C58.5508 53.1079 53.496 52.9637 50.8563 54.8995L45.0236 60.5014C44.7086 60.8047 44.2882 60.974 43.8509 60.9735C43.6227 60.9738 43.3968 60.9278 43.1869 60.8384C42.9769 60.7489 42.7873 60.6179 42.6294 60.4531C41.9816 59.7787 42.0033 58.7067 42.6777 58.0589L48.3527 52.6082L61.3309 22.9002C62.4683 20.313 61.4371 18.0202 60.0927 16.7372C59.0847 15.7751 57.5417 15.3608 56.0658 15.6559C54.3946 15.99 53.04 17.1617 52.2515 18.9554L42.4206 41.3181C42.2884 41.6193 42.0712 41.8753 41.7958 42.0551C41.5204 42.2349 41.1985 42.3305 40.8696 42.3304C40.6421 42.3304 40.4108 42.2843 40.1891 42.1868C39.333 41.8104 38.9441 40.8114 39.3205 39.9553L44.7729 27.5525L42.443 26.5283C40.9807 25.8857 39.8197 25.7769 38.9924 26.2051C38.4068 26.5082 37.9133 27.1089 37.5255 27.9908L31.7279 41.179C31.5956 41.4801 31.3785 41.7362 31.1031 41.9159C30.8276 42.0957 30.5058 42.1913 30.1769 42.1912C29.9493 42.1912 29.718 42.1451 29.4964 42.0476C28.6403 41.6712 28.2514 40.6722 28.6278 39.8161L33.7403 28.1862L30.6383 26.8422C30.6317 26.8394 30.6253 26.8367 30.6188 26.8336C29.6664 26.4067 28.6032 26.379 27.625 26.7557C26.6414 27.1345 25.8666 27.8736 25.4432 28.837L18.5539 44.5104C18.4216 44.8115 18.2045 45.0676 17.9291 45.2473C17.6537 45.4271 17.3318 45.5227 17.0029 45.5226C16.7754 45.5226 16.5441 45.4765 16.3224 45.379C15.4663 45.0028 15.0774 44.0036 15.4538 43.1475L18.8028 35.5293L17.834 35.1081C15.2151 33.969 12.2124 34.9873 10.8504 37.4776C10.7171 37.7214 10.5943 37.9709 10.4825 38.2253L7.93604 44.0175C4.98288 50.7355 3.66352 58.1578 4.12086 65.4818Z"
+                                    fill="white" />
+                                <path
+                                    d="M10.7737 65.0326L12.444 65.7652C13.3005 66.1408 13.6901 67.1395 13.3145 67.9959C13.1824 68.2974 12.9653 68.5538 12.6897 68.7338C12.4142 68.9138 12.0921 69.0096 11.763 69.0095C11.5291 69.0094 11.2979 68.9607 11.0839 68.8664L9.41348 68.1337C8.55705 67.7582 8.16744 66.7595 8.543 65.9031C8.91839 65.0466 9.91705 64.6569 10.7737 65.0326ZM17.5112 68.0255L35.3498 75.8496C36.2063 76.2252 36.5959 77.2238 36.2203 78.0802C36.0882 78.3817 35.8711 78.6381 35.5955 78.8181C35.32 78.9981 34.9979 79.0939 34.6688 79.0938C34.435 79.0938 34.2037 79.0451 33.9897 78.9509L16.151 71.1267C15.2946 70.7511 14.905 69.7524 15.2805 68.896C15.6559 68.0397 16.6544 67.65 17.5112 68.0255ZM61.4932 7.65284C61.328 8.45323 60.6231 9.00403 59.8368 9.00403C59.7233 9.00403 59.608 8.99252 59.4927 8.96881C58.5768 8.77968 57.9878 7.88396 58.1769 6.9681L59.3368 1.35098C59.5257 0.435287 60.4218 -0.153448 61.3373 0.0351773C62.2532 0.224141 62.8422 1.11986 62.6531 2.03573L61.4932 7.65284ZM76.052 7.94339C75.5594 7.14825 75.8049 6.10472 76.5999 5.61233L77.7694 4.88814C78.5645 4.39558 79.6081 4.64092 80.1005 5.43606C80.593 6.2312 80.3475 7.27474 79.5525 7.76713L78.383 8.49132C78.194 8.60852 77.9838 8.68731 77.7643 8.7232C77.5448 8.75909 77.3204 8.75137 77.1039 8.70048C76.8874 8.6496 76.6831 8.55654 76.5026 8.42663C76.3221 8.29673 76.169 8.13252 76.052 7.94339ZM72.7639 12.2327L69.1519 14.6084C68.8763 14.7904 68.5532 14.8873 68.223 14.8871C67.9421 14.8875 67.6656 14.8179 67.4183 14.6848C67.1711 14.5516 66.9608 14.3589 66.8066 14.1242C66.2927 13.3429 66.5096 12.293 67.2909 11.7791L70.903 9.40329C71.6844 8.8894 72.7342 9.1063 73.2481 9.88756C73.762 10.6688 73.5451 11.7188 72.7639 12.2327ZM68.333 22.9417C68.5222 22.026 69.4176 21.4371 70.3338 21.6259L75.9509 22.7857C76.8667 22.9747 77.4558 23.8704 77.2667 24.7863C77.1014 25.5867 76.3965 26.1375 75.6102 26.1375C75.4967 26.1375 75.3814 26.1259 75.266 26.1022L69.6488 24.9424C68.733 24.7532 68.1439 23.8575 68.333 22.9417ZM64.0741 31.6603C64.8555 31.1462 65.9055 31.3633 66.4192 32.1445L69.571 36.9365C70.0849 37.7178 69.868 38.7677 69.0867 39.2816C68.8111 39.4636 68.488 39.5605 68.1578 39.5603C67.8769 39.5607 67.6004 39.4912 67.3532 39.358C67.1059 39.2248 66.8957 39.0321 66.7416 38.7974L63.5898 34.0054C63.0759 33.2241 63.2928 32.1742 64.0741 31.6603ZM45.5197 17.8093C45.3544 18.6095 44.6495 19.1603 43.8632 19.1603C43.7498 19.1603 43.6346 19.1488 43.519 19.1251L39.7742 18.3518C38.8584 18.1627 38.2693 17.267 38.4584 16.3511C38.6476 15.4352 39.5431 14.8462 40.4591 15.0353L44.2039 15.8086C45.1197 15.9977 45.7088 16.8935 45.5197 17.8093ZM33.331 16.9856C33.2175 16.9856 33.1022 16.9741 32.9868 16.9503L31.8164 16.7087C30.9005 16.5196 30.3115 15.6239 30.5006 14.708C30.6897 13.7923 31.5849 13.2032 32.5013 13.3922L33.6717 13.6338C34.5875 13.823 35.1766 14.7187 34.9875 15.6345C34.8222 16.4348 34.1173 16.9856 33.331 16.9856ZM50.6752 10.4949C50.3996 10.6768 50.0766 10.7738 49.7463 10.7736C49.4655 10.774 49.189 10.7045 48.9417 10.5713C48.6945 10.4381 48.4843 10.2454 48.3301 10.0107L45.1783 5.21865C44.6644 4.4374 44.8813 3.38743 45.6626 2.87353C46.444 2.35947 47.494 2.57654 48.0077 3.3578L51.1595 8.1498C51.6734 8.93105 51.4565 9.98102 50.6752 10.4949Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__col group relative flex-1 overflow-hidden transition-all duration-500 hover:flex-[1.2] bg-cover bg-center bg-no-repeat min-h-screen"
+                    style="background-image: url('assets/images/bg-video-2.jpg')">
+                    <div class="absolute inset-0 bg-[#212121]/60 transition-opacity duration-300">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex flex-col justify-center items-center text-center z-10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-[25px] font-normal px-20">
+                            We are especially proud of the thermal relaxation pools at the Hotel & Spa Resort Kaskady.
+                        </p>
+                        <div
+                            class="h-[80px] w-[80px] bg-[#D86C38]/20 rounded-full flex items-center justify-center mx-auto mt-10 scale-animation">
+                            <div
+                                class="h-[60px] w-[60px] bg-[#D86C38] rounded-full flex items-center justify-center hover:cursor-pointer">
+                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.4086 7.35258C19.5305 8.50647 19.5305 11.4935 17.4086 12.6474L4.59662 19.6145C2.53435 20.736 -1.03121e-07 19.2763 0 16.9671L6.22253e-07 3.0329C7.25375e-07 0.723683 2.53435 -0.735977 4.59661 0.385476L17.4086 7.35258Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center mx-auto mt-32">
+                            <svg width="81" height="85" viewBox="0 0 81 85" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.83591 42.6548L7.38218 36.8628C7.53329 36.5189 7.69927 36.1817 7.87965 35.8522C8.94165 33.9103 10.6845 32.4483 12.7868 31.7355C14.8782 31.0248 17.1596 31.1201 19.1845 32.0027L20.1657 32.4294L21.4195 29.5771L21.42 29.576L22.3439 27.4747C23.1333 25.6792 24.5769 24.3016 26.4088 23.596C28.2317 22.894 30.2148 22.9449 31.9943 23.7392L35.25 25.1497C35.8523 24.2929 36.5837 23.6392 37.4366 23.1977C39.2181 22.2758 41.3612 22.3533 43.8067 23.4285L46.1364 24.4526L49.1521 17.5926C50.3796 14.8 52.6581 12.8838 55.4028 12.3352C57.9831 11.8194 60.6103 12.5494 62.4314 14.2875C65.1641 16.8954 65.9492 20.8111 64.4331 24.2597L53.0096 50.4091C53.9661 50.2155 54.974 50.127 55.9969 50.1519C58.6538 50.2174 61.0427 51.0623 62.6423 52.4868C62.7473 52.5549 62.846 52.6355 62.9364 52.7286C64.544 54.3841 65.3364 56.3867 65.2286 58.5196C65.0936 61.1853 63.5709 63.814 60.8252 66.1219C60.8113 66.1336 60.7972 66.1451 60.7828 66.1563L37.301 84.6373C37.0599 84.8273 36.7716 84.9481 36.4671 84.9868C36.1626 85.0254 35.8533 84.9805 35.5724 84.8568L1.9327 70.0686C1.64822 69.9436 1.40364 69.7427 1.22575 69.4879C1.04787 69.2331 0.94355 68.9343 0.924217 68.6241L0.74118 65.6928C0.250145 57.8318 1.66602 49.8654 4.83591 42.6548ZM4.12086 65.4818L4.23972 67.3835L36.0048 81.3479L58.6661 63.5125C60.6323 61.8538 61.7614 60.0205 61.846 58.3484C61.9009 57.2644 61.5294 56.2549 60.741 55.3433C60.6841 55.2981 60.6296 55.2488 60.5778 55.1955C58.5508 53.1079 53.496 52.9637 50.8563 54.8995L45.0236 60.5014C44.7086 60.8047 44.2882 60.974 43.8509 60.9735C43.6227 60.9738 43.3968 60.9278 43.1869 60.8384C42.9769 60.7489 42.7873 60.6179 42.6294 60.4531C41.9816 59.7787 42.0033 58.7067 42.6777 58.0589L48.3527 52.6082L61.3309 22.9002C62.4683 20.313 61.4371 18.0202 60.0927 16.7372C59.0847 15.7751 57.5417 15.3608 56.0658 15.6559C54.3946 15.99 53.04 17.1617 52.2515 18.9554L42.4206 41.3181C42.2884 41.6193 42.0712 41.8753 41.7958 42.0551C41.5204 42.2349 41.1985 42.3305 40.8696 42.3304C40.6421 42.3304 40.4108 42.2843 40.1891 42.1868C39.333 41.8104 38.9441 40.8114 39.3205 39.9553L44.7729 27.5525L42.443 26.5283C40.9807 25.8857 39.8197 25.7769 38.9924 26.2051C38.4068 26.5082 37.9133 27.1089 37.5255 27.9908L31.7279 41.179C31.5956 41.4801 31.3785 41.7362 31.1031 41.9159C30.8276 42.0957 30.5058 42.1913 30.1769 42.1912C29.9493 42.1912 29.718 42.1451 29.4964 42.0476C28.6403 41.6712 28.2514 40.6722 28.6278 39.8161L33.7403 28.1862L30.6383 26.8422C30.6317 26.8394 30.6253 26.8367 30.6188 26.8336C29.6664 26.4067 28.6032 26.379 27.625 26.7557C26.6414 27.1345 25.8666 27.8736 25.4432 28.837L18.5539 44.5104C18.4216 44.8115 18.2045 45.0676 17.9291 45.2473C17.6537 45.4271 17.3318 45.5227 17.0029 45.5226C16.7754 45.5226 16.5441 45.4765 16.3224 45.379C15.4663 45.0028 15.0774 44.0036 15.4538 43.1475L18.8028 35.5293L17.834 35.1081C15.2151 33.969 12.2124 34.9873 10.8504 37.4776C10.7171 37.7214 10.5943 37.9709 10.4825 38.2253L7.93604 44.0175C4.98288 50.7355 3.66352 58.1578 4.12086 65.4818Z"
+                                    fill="white" />
+                                <path
+                                    d="M10.7737 65.0326L12.444 65.7652C13.3005 66.1408 13.6901 67.1395 13.3145 67.9959C13.1824 68.2974 12.9653 68.5538 12.6897 68.7338C12.4142 68.9138 12.0921 69.0096 11.763 69.0095C11.5291 69.0094 11.2979 68.9607 11.0839 68.8664L9.41348 68.1337C8.55705 67.7582 8.16744 66.7595 8.543 65.9031C8.91839 65.0466 9.91705 64.6569 10.7737 65.0326ZM17.5112 68.0255L35.3498 75.8496C36.2063 76.2252 36.5959 77.2238 36.2203 78.0802C36.0882 78.3817 35.8711 78.6381 35.5955 78.8181C35.32 78.9981 34.9979 79.0939 34.6688 79.0938C34.435 79.0938 34.2037 79.0451 33.9897 78.9509L16.151 71.1267C15.2946 70.7511 14.905 69.7524 15.2805 68.896C15.6559 68.0397 16.6544 67.65 17.5112 68.0255ZM61.4932 7.65284C61.328 8.45323 60.6231 9.00403 59.8368 9.00403C59.7233 9.00403 59.608 8.99252 59.4927 8.96881C58.5768 8.77968 57.9878 7.88396 58.1769 6.9681L59.3368 1.35098C59.5257 0.435287 60.4218 -0.153448 61.3373 0.0351773C62.2532 0.224141 62.8422 1.11986 62.6531 2.03573L61.4932 7.65284ZM76.052 7.94339C75.5594 7.14825 75.8049 6.10472 76.5999 5.61233L77.7694 4.88814C78.5645 4.39558 79.6081 4.64092 80.1005 5.43606C80.593 6.2312 80.3475 7.27474 79.5525 7.76713L78.383 8.49132C78.194 8.60852 77.9838 8.68731 77.7643 8.7232C77.5448 8.75909 77.3204 8.75137 77.1039 8.70048C76.8874 8.6496 76.6831 8.55654 76.5026 8.42663C76.3221 8.29673 76.169 8.13252 76.052 7.94339ZM72.7639 12.2327L69.1519 14.6084C68.8763 14.7904 68.5532 14.8873 68.223 14.8871C67.9421 14.8875 67.6656 14.8179 67.4183 14.6848C67.1711 14.5516 66.9608 14.3589 66.8066 14.1242C66.2927 13.3429 66.5096 12.293 67.2909 11.7791L70.903 9.40329C71.6844 8.8894 72.7342 9.1063 73.2481 9.88756C73.762 10.6688 73.5451 11.7188 72.7639 12.2327ZM68.333 22.9417C68.5222 22.026 69.4176 21.4371 70.3338 21.6259L75.9509 22.7857C76.8667 22.9747 77.4558 23.8704 77.2667 24.7863C77.1014 25.5867 76.3965 26.1375 75.6102 26.1375C75.4967 26.1375 75.3814 26.1259 75.266 26.1022L69.6488 24.9424C68.733 24.7532 68.1439 23.8575 68.333 22.9417ZM64.0741 31.6603C64.8555 31.1462 65.9055 31.3633 66.4192 32.1445L69.571 36.9365C70.0849 37.7178 69.868 38.7677 69.0867 39.2816C68.8111 39.4636 68.488 39.5605 68.1578 39.5603C67.8769 39.5607 67.6004 39.4912 67.3532 39.358C67.1059 39.2248 66.8957 39.0321 66.7416 38.7974L63.5898 34.0054C63.0759 33.2241 63.2928 32.1742 64.0741 31.6603ZM45.5197 17.8093C45.3544 18.6095 44.6495 19.1603 43.8632 19.1603C43.7498 19.1603 43.6346 19.1488 43.519 19.1251L39.7742 18.3518C38.8584 18.1627 38.2693 17.267 38.4584 16.3511C38.6476 15.4352 39.5431 14.8462 40.4591 15.0353L44.2039 15.8086C45.1197 15.9977 45.7088 16.8935 45.5197 17.8093ZM33.331 16.9856C33.2175 16.9856 33.1022 16.9741 32.9868 16.9503L31.8164 16.7087C30.9005 16.5196 30.3115 15.6239 30.5006 14.708C30.6897 13.7923 31.5849 13.2032 32.5013 13.3922L33.6717 13.6338C34.5875 13.823 35.1766 14.7187 34.9875 15.6345C34.8222 16.4348 34.1173 16.9856 33.331 16.9856ZM50.6752 10.4949C50.3996 10.6768 50.0766 10.7738 49.7463 10.7736C49.4655 10.774 49.189 10.7045 48.9417 10.5713C48.6945 10.4381 48.4843 10.2454 48.3301 10.0107L45.1783 5.21865C44.6644 4.4374 44.8813 3.38743 45.6626 2.87353C46.444 2.35947 47.494 2.57654 48.0077 3.3578L51.1595 8.1498C51.6734 8.93105 51.4565 9.98102 50.6752 10.4949Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__col group relative flex-1 overflow-hidden transition-all duration-500 hover:flex-[1.2] bg-cover bg-center bg-no-repeat min-h-screen"
+                    style="background-image: url('assets/images/bg-video-3.jpg')">
+                    <div class="absolute inset-0 bg-[#212121]/60 transition-opacity duration-300">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex flex-col justify-center items-center text-center z-10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-[25px] font-normal px-20">
+                            We are especially proud of the thermal relaxation pools at the Hotel & Spa Resort Kaskady.
+                        </p>
+                        <div
+                            class="h-[80px] w-[80px] bg-[#D86C38]/20 rounded-full flex items-center justify-center mx-auto mt-10 scale-animation">
+                            <div
+                                class="h-[60px] w-[60px] bg-[#D86C38] rounded-full flex items-center justify-center hover:cursor-pointer">
+                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.4086 7.35258C19.5305 8.50647 19.5305 11.4935 17.4086 12.6474L4.59662 19.6145C2.53435 20.736 -1.03121e-07 19.2763 0 16.9671L6.22253e-07 3.0329C7.25375e-07 0.723683 2.53435 -0.735977 4.59661 0.385476L17.4086 7.35258Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center mx-auto mt-32">
+                            <svg width="81" height="85" viewBox="0 0 81 85" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.83591 42.6548L7.38218 36.8628C7.53329 36.5189 7.69927 36.1817 7.87965 35.8522C8.94165 33.9103 10.6845 32.4483 12.7868 31.7355C14.8782 31.0248 17.1596 31.1201 19.1845 32.0027L20.1657 32.4294L21.4195 29.5771L21.42 29.576L22.3439 27.4747C23.1333 25.6792 24.5769 24.3016 26.4088 23.596C28.2317 22.894 30.2148 22.9449 31.9943 23.7392L35.25 25.1497C35.8523 24.2929 36.5837 23.6392 37.4366 23.1977C39.2181 22.2758 41.3612 22.3533 43.8067 23.4285L46.1364 24.4526L49.1521 17.5926C50.3796 14.8 52.6581 12.8838 55.4028 12.3352C57.9831 11.8194 60.6103 12.5494 62.4314 14.2875C65.1641 16.8954 65.9492 20.8111 64.4331 24.2597L53.0096 50.4091C53.9661 50.2155 54.974 50.127 55.9969 50.1519C58.6538 50.2174 61.0427 51.0623 62.6423 52.4868C62.7473 52.5549 62.846 52.6355 62.9364 52.7286C64.544 54.3841 65.3364 56.3867 65.2286 58.5196C65.0936 61.1853 63.5709 63.814 60.8252 66.1219C60.8113 66.1336 60.7972 66.1451 60.7828 66.1563L37.301 84.6373C37.0599 84.8273 36.7716 84.9481 36.4671 84.9868C36.1626 85.0254 35.8533 84.9805 35.5724 84.8568L1.9327 70.0686C1.64822 69.9436 1.40364 69.7427 1.22575 69.4879C1.04787 69.2331 0.94355 68.9343 0.924217 68.6241L0.74118 65.6928C0.250145 57.8318 1.66602 49.8654 4.83591 42.6548ZM4.12086 65.4818L4.23972 67.3835L36.0048 81.3479L58.6661 63.5125C60.6323 61.8538 61.7614 60.0205 61.846 58.3484C61.9009 57.2644 61.5294 56.2549 60.741 55.3433C60.6841 55.2981 60.6296 55.2488 60.5778 55.1955C58.5508 53.1079 53.496 52.9637 50.8563 54.8995L45.0236 60.5014C44.7086 60.8047 44.2882 60.974 43.8509 60.9735C43.6227 60.9738 43.3968 60.9278 43.1869 60.8384C42.9769 60.7489 42.7873 60.6179 42.6294 60.4531C41.9816 59.7787 42.0033 58.7067 42.6777 58.0589L48.3527 52.6082L61.3309 22.9002C62.4683 20.313 61.4371 18.0202 60.0927 16.7372C59.0847 15.7751 57.5417 15.3608 56.0658 15.6559C54.3946 15.99 53.04 17.1617 52.2515 18.9554L42.4206 41.3181C42.2884 41.6193 42.0712 41.8753 41.7958 42.0551C41.5204 42.2349 41.1985 42.3305 40.8696 42.3304C40.6421 42.3304 40.4108 42.2843 40.1891 42.1868C39.333 41.8104 38.9441 40.8114 39.3205 39.9553L44.7729 27.5525L42.443 26.5283C40.9807 25.8857 39.8197 25.7769 38.9924 26.2051C38.4068 26.5082 37.9133 27.1089 37.5255 27.9908L31.7279 41.179C31.5956 41.4801 31.3785 41.7362 31.1031 41.9159C30.8276 42.0957 30.5058 42.1913 30.1769 42.1912C29.9493 42.1912 29.718 42.1451 29.4964 42.0476C28.6403 41.6712 28.2514 40.6722 28.6278 39.8161L33.7403 28.1862L30.6383 26.8422C30.6317 26.8394 30.6253 26.8367 30.6188 26.8336C29.6664 26.4067 28.6032 26.379 27.625 26.7557C26.6414 27.1345 25.8666 27.8736 25.4432 28.837L18.5539 44.5104C18.4216 44.8115 18.2045 45.0676 17.9291 45.2473C17.6537 45.4271 17.3318 45.5227 17.0029 45.5226C16.7754 45.5226 16.5441 45.4765 16.3224 45.379C15.4663 45.0028 15.0774 44.0036 15.4538 43.1475L18.8028 35.5293L17.834 35.1081C15.2151 33.969 12.2124 34.9873 10.8504 37.4776C10.7171 37.7214 10.5943 37.9709 10.4825 38.2253L7.93604 44.0175C4.98288 50.7355 3.66352 58.1578 4.12086 65.4818Z"
+                                    fill="white" />
+                                <path
+                                    d="M10.7737 65.0326L12.444 65.7652C13.3005 66.1408 13.6901 67.1395 13.3145 67.9959C13.1824 68.2974 12.9653 68.5538 12.6897 68.7338C12.4142 68.9138 12.0921 69.0096 11.763 69.0095C11.5291 69.0094 11.2979 68.9607 11.0839 68.8664L9.41348 68.1337C8.55705 67.7582 8.16744 66.7595 8.543 65.9031C8.91839 65.0466 9.91705 64.6569 10.7737 65.0326ZM17.5112 68.0255L35.3498 75.8496C36.2063 76.2252 36.5959 77.2238 36.2203 78.0802C36.0882 78.3817 35.8711 78.6381 35.5955 78.8181C35.32 78.9981 34.9979 79.0939 34.6688 79.0938C34.435 79.0938 34.2037 79.0451 33.9897 78.9509L16.151 71.1267C15.2946 70.7511 14.905 69.7524 15.2805 68.896C15.6559 68.0397 16.6544 67.65 17.5112 68.0255ZM61.4932 7.65284C61.328 8.45323 60.6231 9.00403 59.8368 9.00403C59.7233 9.00403 59.608 8.99252 59.4927 8.96881C58.5768 8.77968 57.9878 7.88396 58.1769 6.9681L59.3368 1.35098C59.5257 0.435287 60.4218 -0.153448 61.3373 0.0351773C62.2532 0.224141 62.8422 1.11986 62.6531 2.03573L61.4932 7.65284ZM76.052 7.94339C75.5594 7.14825 75.8049 6.10472 76.5999 5.61233L77.7694 4.88814C78.5645 4.39558 79.6081 4.64092 80.1005 5.43606C80.593 6.2312 80.3475 7.27474 79.5525 7.76713L78.383 8.49132C78.194 8.60852 77.9838 8.68731 77.7643 8.7232C77.5448 8.75909 77.3204 8.75137 77.1039 8.70048C76.8874 8.6496 76.6831 8.55654 76.5026 8.42663C76.3221 8.29673 76.169 8.13252 76.052 7.94339ZM72.7639 12.2327L69.1519 14.6084C68.8763 14.7904 68.5532 14.8873 68.223 14.8871C67.9421 14.8875 67.6656 14.8179 67.4183 14.6848C67.1711 14.5516 66.9608 14.3589 66.8066 14.1242C66.2927 13.3429 66.5096 12.293 67.2909 11.7791L70.903 9.40329C71.6844 8.8894 72.7342 9.1063 73.2481 9.88756C73.762 10.6688 73.5451 11.7188 72.7639 12.2327ZM68.333 22.9417C68.5222 22.026 69.4176 21.4371 70.3338 21.6259L75.9509 22.7857C76.8667 22.9747 77.4558 23.8704 77.2667 24.7863C77.1014 25.5867 76.3965 26.1375 75.6102 26.1375C75.4967 26.1375 75.3814 26.1259 75.266 26.1022L69.6488 24.9424C68.733 24.7532 68.1439 23.8575 68.333 22.9417ZM64.0741 31.6603C64.8555 31.1462 65.9055 31.3633 66.4192 32.1445L69.571 36.9365C70.0849 37.7178 69.868 38.7677 69.0867 39.2816C68.8111 39.4636 68.488 39.5605 68.1578 39.5603C67.8769 39.5607 67.6004 39.4912 67.3532 39.358C67.1059 39.2248 66.8957 39.0321 66.7416 38.7974L63.5898 34.0054C63.0759 33.2241 63.2928 32.1742 64.0741 31.6603ZM45.5197 17.8093C45.3544 18.6095 44.6495 19.1603 43.8632 19.1603C43.7498 19.1603 43.6346 19.1488 43.519 19.1251L39.7742 18.3518C38.8584 18.1627 38.2693 17.267 38.4584 16.3511C38.6476 15.4352 39.5431 14.8462 40.4591 15.0353L44.2039 15.8086C45.1197 15.9977 45.7088 16.8935 45.5197 17.8093ZM33.331 16.9856C33.2175 16.9856 33.1022 16.9741 32.9868 16.9503L31.8164 16.7087C30.9005 16.5196 30.3115 15.6239 30.5006 14.708C30.6897 13.7923 31.5849 13.2032 32.5013 13.3922L33.6717 13.6338C34.5875 13.823 35.1766 14.7187 34.9875 15.6345C34.8222 16.4348 34.1173 16.9856 33.331 16.9856ZM50.6752 10.4949C50.3996 10.6768 50.0766 10.7738 49.7463 10.7736C49.4655 10.774 49.189 10.7045 48.9417 10.5713C48.6945 10.4381 48.4843 10.2454 48.3301 10.0107L45.1783 5.21865C44.6644 4.4374 44.8813 3.38743 45.6626 2.87353C46.444 2.35947 47.494 2.57654 48.0077 3.3578L51.1595 8.1498C51.6734 8.93105 51.4565 9.98102 50.6752 10.4949Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Videos section end-->
+    <!-- Videos section Start-->
+    <section class="py-28 relative">
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 bg-[#9D97A0]/90 transition-opacity duration-300"></div>
+        <!-- Background Image -->
+        <div class="max-w-[1440px] mx-auto relative">
+            <img src="assets/images/Rectangle 5.jpg" alt="" class="w-full h-auto">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center z-10">
+            <div class="swiper mySwiper overflow-visible">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-[#FFEFE7] p-5 w-[709px]">
+                        <div class="border border-[#EC9C70] p-16">
+                            <div class="icon">
+                                <svg width="50" height="45" viewBox="0 0 50 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.56393 44.1338H18.1531C19.5684 44.1338 20.7171 42.9851 20.7171 41.5698V25.9806C20.7171 24.5652 19.5684 23.4166 18.1531 23.4166H10.6918C10.7893 19.3347 11.738 16.0682 13.5328 13.6119C14.9481 11.6735 17.0916 10.0684 19.9582 8.80177C21.2761 8.22231 21.8453 6.66339 21.2299 5.36082L19.3838 1.46354C18.789 0.212353 17.3172 -0.336399 16.0455 0.212349C12.6507 1.67896 9.78413 3.53531 7.4458 5.79163C4.59457 8.54537 2.64085 11.653 1.58448 15.1195C0.528057 18.586 -8.01086e-05 23.3141 -8.01086e-05 29.3138V41.5698C-8.01086e-05 42.9851 1.14865 44.1338 2.56393 44.1338ZM44.5624 0.222607C41.2087 1.68409 38.3575 3.54038 36.0037 5.79163C33.1269 8.54537 31.1629 11.6427 30.1065 15.0836C29.0501 18.5245 28.522 23.2679 28.522 29.3138V41.5698C28.522 42.9851 29.6706 44.1338 31.086 44.1338H46.6752C48.0905 44.1338 49.2392 42.9851 49.2392 41.5698V25.9806C49.2392 24.5652 48.0905 23.4166 46.6752 23.4166H39.2139C39.3114 19.3347 40.26 16.0682 42.0548 13.6119C43.4702 11.6735 45.6137 10.0684 48.4803 8.80177C49.7982 8.22231 50.3674 6.66339 49.752 5.36082L47.911 1.47379C47.3161 0.222603 45.8341 -0.331272 44.5624 0.222607Z"
+                                        fill="#F5CAB2" />
+                                </svg>
+                            </div>
+                            <p class="text-[22px] text-[#878787] font-normal mt-6 leading-10">Lorem Ipsum is simply
+                                dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown.</p>
+                            <div class="stars mt-8">
+                                <svg width="195" height="35" viewBox="0 0 195 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5489 2.92705C16.8483 2.00574 18.1517 2.00574 18.4511 2.92705L21.2045 11.4012C21.3384 11.8132 21.7223 12.0922 22.1555 12.0922L31.0658 12.0922C32.0345 12.0922 32.4373 13.3318 31.6536 13.9012L24.445 19.1385C24.0945 19.3932 23.9479 19.8446 24.0818 20.2566L26.8352 28.7308C27.1345 29.6521 26.0801 30.4182 25.2963 29.8488L18.0878 24.6115C17.7373 24.3568 17.2627 24.3568 16.9122 24.6115L9.70365 29.8488C8.91994 30.4182 7.86546 29.6521 8.16481 28.7307L10.9182 20.2566C11.0521 19.8446 10.9055 19.3932 10.555 19.1385L3.34641 13.9012C2.56269 13.3318 2.96547 12.0922 3.93419 12.0922L12.8445 12.0922C13.2777 12.0922 13.6616 11.8132 13.7955 11.4012L16.5489 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M56.5489 2.92705C56.8483 2.00574 58.1517 2.00574 58.4511 2.92705L61.2045 11.4012C61.3384 11.8132 61.7223 12.0922 62.1555 12.0922L71.0658 12.0922C72.0345 12.0922 72.4373 13.3318 71.6536 13.9012L64.445 19.1385C64.0945 19.3932 63.9479 19.8446 64.0818 20.2566L66.8352 28.7308C67.1345 29.6521 66.0801 30.4182 65.2963 29.8488L58.0878 24.6115C57.7373 24.3568 57.2627 24.3568 56.9122 24.6115L49.7037 29.8488C48.9199 30.4182 47.8655 29.6521 48.1648 28.7307L50.9182 20.2566C51.0521 19.8446 50.9055 19.3932 50.555 19.1385L43.3464 13.9012C42.5627 13.3318 42.9655 12.0922 43.9342 12.0922L52.8445 12.0922C53.2777 12.0922 53.6616 11.8132 53.7955 11.4012L56.5489 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M96.5489 2.92705C96.8483 2.00574 98.1517 2.00574 98.4511 2.92705L101.204 11.4012C101.338 11.8132 101.722 12.0922 102.156 12.0922L111.066 12.0922C112.035 12.0922 112.437 13.3318 111.654 13.9012L104.445 19.1385C104.095 19.3932 103.948 19.8446 104.082 20.2566L106.835 28.7308C107.135 29.6521 106.08 30.4182 105.296 29.8488L98.0878 24.6115C97.7373 24.3568 97.2627 24.3568 96.9122 24.6115L89.7037 29.8488C88.9199 30.4182 87.8655 29.6521 88.1648 28.7307L90.9182 20.2566C91.0521 19.8446 90.9055 19.3932 90.555 19.1385L83.3464 13.9012C82.5627 13.3318 82.9655 12.0922 83.9342 12.0922L92.8445 12.0922C93.2777 12.0922 93.6616 11.8132 93.7955 11.4012L96.5489 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M136.549 2.92705C136.848 2.00574 138.152 2.00574 138.451 2.92705L141.204 11.4012C141.338 11.8132 141.722 12.0922 142.156 12.0922L151.066 12.0922C152.035 12.0922 152.437 13.3318 151.654 13.9012L144.445 19.1385C144.095 19.3932 143.948 19.8446 144.082 20.2566L146.835 28.7308C147.135 29.6521 146.08 30.4182 145.296 29.8488L138.088 24.6115C137.737 24.3568 137.263 24.3568 136.912 24.6115L129.704 29.8488C128.92 30.4182 127.865 29.6521 128.165 28.7307L130.918 20.2566C131.052 19.8446 130.905 19.3932 130.555 19.1385L123.346 13.9012C122.563 13.3318 122.965 12.0922 123.934 12.0922L132.844 12.0922C133.278 12.0922 133.662 11.8132 133.796 11.4012L136.549 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M176.549 2.92705C176.848 2.00574 178.152 2.00574 178.451 2.92705L181.204 11.4012C181.338 11.8132 181.722 12.0922 182.156 12.0922L191.066 12.0922C192.035 12.0922 192.437 13.3318 191.654 13.9012L184.445 19.1385C184.095 19.3932 183.948 19.8446 184.082 20.2566L186.835 28.7308C187.135 29.6521 186.08 30.4182 185.296 29.8488L178.088 24.6115C177.737 24.3568 177.263 24.3568 176.912 24.6115L169.704 29.8488C168.92 30.4182 167.865 29.6521 168.165 28.7307L170.918 20.2566C171.052 19.8446 170.905 19.3932 170.555 19.1385L163.346 13.9012C162.563 13.3318 162.965 12.0922 163.934 12.0922L172.844 12.0922C173.278 12.0922 173.662 11.8132 173.796 11.4012L176.549 2.92705Z"
+                                        fill="#FE9303" />
+                                </svg>
+                                <span class="text-[25px] font-bold font-judson text-[#878787]">Emery Dokidis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-[#FFEFE7] p-5 w-[709px]">
+                        <div class="border border-[#EC9C70] p-16">
+                            <div class="icon">
+                                <svg width="50" height="45" viewBox="0 0 50 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.56393 44.1338H18.1531C19.5684 44.1338 20.7171 42.9851 20.7171 41.5698V25.9806C20.7171 24.5652 19.5684 23.4166 18.1531 23.4166H10.6918C10.7893 19.3347 11.738 16.0682 13.5328 13.6119C14.9481 11.6735 17.0916 10.0684 19.9582 8.80177C21.2761 8.22231 21.8453 6.66339 21.2299 5.36082L19.3838 1.46354C18.789 0.212353 17.3172 -0.336399 16.0455 0.212349C12.6507 1.67896 9.78413 3.53531 7.4458 5.79163C4.59457 8.54537 2.64085 11.653 1.58448 15.1195C0.528057 18.586 -8.01086e-05 23.3141 -8.01086e-05 29.3138V41.5698C-8.01086e-05 42.9851 1.14865 44.1338 2.56393 44.1338ZM44.5624 0.222607C41.2087 1.68409 38.3575 3.54038 36.0037 5.79163C33.1269 8.54537 31.1629 11.6427 30.1065 15.0836C29.0501 18.5245 28.522 23.2679 28.522 29.3138V41.5698C28.522 42.9851 29.6706 44.1338 31.086 44.1338H46.6752C48.0905 44.1338 49.2392 42.9851 49.2392 41.5698V25.9806C49.2392 24.5652 48.0905 23.4166 46.6752 23.4166H39.2139C39.3114 19.3347 40.26 16.0682 42.0548 13.6119C43.4702 11.6735 45.6137 10.0684 48.4803 8.80177C49.7982 8.22231 50.3674 6.66339 49.752 5.36082L47.911 1.47379C47.3161 0.222603 45.8341 -0.331272 44.5624 0.222607Z"
+                                        fill="#F5CAB2" />
+                                </svg>
+                            </div>
+                            <p class="text-[22px] text-[#878787] font-normal mt-6 leading-10">Lorem Ipsum is simply
+                                dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown.</p>
+                            <div class="stars mt-8">
+                                <svg width="195" height="35" viewBox="0 0 195 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5489 2.92705C16.8483 2.00574 18.1517 2.00574 18.4511 2.92705L21.2045 11.4012C21.3384 11.8132 21.7223 12.0922 22.1555 12.0922L31.0658 12.0922C32.0345 12.0922 32.4373 13.3318 31.6536 13.9012L24.445 19.1385C24.0945 19.3932 23.9479 19.8446 24.0818 20.2566L26.8352 28.7308C27.1345 29.6521 26.0801 30.4182 25.2963 29.8488L18.0878 24.6115C17.7373 24.3568 17.2627 24.3568 16.9122 24.6115L9.70365 29.8488C8.91994 30.4182 7.86546 29.6521 8.16481 28.7307L10.9182 20.2566C11.0521 19.8446 10.9055 19.3932 10.555 19.1385L3.34641 13.9012C2.56269 13.3318 2.96547 12.0922 3.93419 12.0922L12.8445 12.0922C13.2777 12.0922 13.6616 11.8132 13.7955 11.4012L16.5489 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M56.5489 2.92705C56.8483 2.00574 58.1517 2.00574 58.4511 2.92705L61.2045 11.4012C61.3384 11.8132 61.7223 12.0922 62.1555 12.0922L71.0658 12.0922C72.0345 12.0922 72.4373 13.3318 71.6536 13.9012L64.445 19.1385C64.0945 19.3932 63.9479 19.8446 64.0818 20.2566L66.8352 28.7308C67.1345 29.6521 66.0801 30.4182 65.2963 29.8488L58.0878 24.6115C57.7373 24.3568 57.2627 24.3568 56.9122 24.6115L49.7037 29.8488C48.9199 30.4182 47.8655 29.6521 48.1648 28.7307L50.9182 20.2566C51.0521 19.8446 50.9055 19.3932 50.555 19.1385L43.3464 13.9012C42.5627 13.3318 42.9655 12.0922 43.9342 12.0922L52.8445 12.0922C53.2777 12.0922 53.6616 11.8132 53.7955 11.4012L56.5489 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M96.5489 2.92705C96.8483 2.00574 98.1517 2.00574 98.4511 2.92705L101.204 11.4012C101.338 11.8132 101.722 12.0922 102.156 12.0922L111.066 12.0922C112.035 12.0922 112.437 13.3318 111.654 13.9012L104.445 19.1385C104.095 19.3932 103.948 19.8446 104.082 20.2566L106.835 28.7308C107.135 29.6521 106.08 30.4182 105.296 29.8488L98.0878 24.6115C97.7373 24.3568 97.2627 24.3568 96.9122 24.6115L89.7037 29.8488C88.9199 30.4182 87.8655 29.6521 88.1648 28.7307L90.9182 20.2566C91.0521 19.8446 90.9055 19.3932 90.555 19.1385L83.3464 13.9012C82.5627 13.3318 82.9655 12.0922 83.9342 12.0922L92.8445 12.0922C93.2777 12.0922 93.6616 11.8132 93.7955 11.4012L96.5489 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M136.549 2.92705C136.848 2.00574 138.152 2.00574 138.451 2.92705L141.204 11.4012C141.338 11.8132 141.722 12.0922 142.156 12.0922L151.066 12.0922C152.035 12.0922 152.437 13.3318 151.654 13.9012L144.445 19.1385C144.095 19.3932 143.948 19.8446 144.082 20.2566L146.835 28.7308C147.135 29.6521 146.08 30.4182 145.296 29.8488L138.088 24.6115C137.737 24.3568 137.263 24.3568 136.912 24.6115L129.704 29.8488C128.92 30.4182 127.865 29.6521 128.165 28.7307L130.918 20.2566C131.052 19.8446 130.905 19.3932 130.555 19.1385L123.346 13.9012C122.563 13.3318 122.965 12.0922 123.934 12.0922L132.844 12.0922C133.278 12.0922 133.662 11.8132 133.796 11.4012L136.549 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M176.549 2.92705C176.848 2.00574 178.152 2.00574 178.451 2.92705L181.204 11.4012C181.338 11.8132 181.722 12.0922 182.156 12.0922L191.066 12.0922C192.035 12.0922 192.437 13.3318 191.654 13.9012L184.445 19.1385C184.095 19.3932 183.948 19.8446 184.082 20.2566L186.835 28.7308C187.135 29.6521 186.08 30.4182 185.296 29.8488L178.088 24.6115C177.737 24.3568 177.263 24.3568 176.912 24.6115L169.704 29.8488C168.92 30.4182 167.865 29.6521 168.165 28.7307L170.918 20.2566C171.052 19.8446 170.905 19.3932 170.555 19.1385L163.346 13.9012C162.563 13.3318 162.965 12.0922 163.934 12.0922L172.844 12.0922C173.278 12.0922 173.662 11.8132 173.796 11.4012L176.549 2.92705Z"
+                                        fill="#FE9303" />
+                                </svg>
+                                <span class="text-[25px] font-bold font-judson text-[#878787]">Emery Dokidis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-[#FFEFE7] p-5 w-[709px]">
+                        <div class="border border-[#EC9C70] p-16">
+                            <div class="icon">
+                                <svg width="50" height="45" viewBox="0 0 50 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.56393 44.1338H18.1531C19.5684 44.1338 20.7171 42.9851 20.7171 41.5698V25.9806C20.7171 24.5652 19.5684 23.4166 18.1531 23.4166H10.6918C10.7893 19.3347 11.738 16.0682 13.5328 13.6119C14.9481 11.6735 17.0916 10.0684 19.9582 8.80177C21.2761 8.22231 21.8453 6.66339 21.2299 5.36082L19.3838 1.46354C18.789 0.212353 17.3172 -0.336399 16.0455 0.212349C12.6507 1.67896 9.78413 3.53531 7.4458 5.79163C4.59457 8.54537 2.64085 11.653 1.58448 15.1195C0.528057 18.586 -8.01086e-05 23.3141 -8.01086e-05 29.3138V41.5698C-8.01086e-05 42.9851 1.14865 44.1338 2.56393 44.1338ZM44.5624 0.222607C41.2087 1.68409 38.3575 3.54038 36.0037 5.79163C33.1269 8.54537 31.1629 11.6427 30.1065 15.0836C29.0501 18.5245 28.522 23.2679 28.522 29.3138V41.5698C28.522 42.9851 29.6706 44.1338 31.086 44.1338H46.6752C48.0905 44.1338 49.2392 42.9851 49.2392 41.5698V25.9806C49.2392 24.5652 48.0905 23.4166 46.6752 23.4166H39.2139C39.3114 19.3347 40.26 16.0682 42.0548 13.6119C43.4702 11.6735 45.6137 10.0684 48.4803 8.80177C49.7982 8.22231 50.3674 6.66339 49.752 5.36082L47.911 1.47379C47.3161 0.222603 45.8341 -0.331272 44.5624 0.222607Z"
+                                        fill="#F5CAB2" />
+                                </svg>
+                            </div>
+                            <p class="text-[22px] text-[#878787] font-normal mt-6 leading-10">Lorem Ipsum is simply
+                                dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown.</p>
+                            <div class="stars mt-8">
+                                <svg width="195" height="35" viewBox="0 0 195 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5489 2.92705C16.8483 2.00574 18.1517 2.00574 18.4511 2.92705L21.2045 11.4012C21.3384 11.8132 21.7223 12.0922 22.1555 12.0922L31.0658 12.0922C32.0345 12.0922 32.4373 13.3318 31.6536 13.9012L24.445 19.1385C24.0945 19.3932 23.9479 19.8446 24.0818 20.2566L26.8352 28.7308C27.1345 29.6521 26.0801 30.4182 25.2963 29.8488L18.0878 24.6115C17.7373 24.3568 17.2627 24.3568 16.9122 24.6115L9.70365 29.8488C8.91994 30.4182 7.86546 29.6521 8.16481 28.7307L10.9182 20.2566C11.0521 19.8446 10.9055 19.3932 10.555 19.1385L3.34641 13.9012C2.56269 13.3318 2.96547 12.0922 3.93419 12.0922L12.8445 12.0922C13.2777 12.0922 13.6616 11.8132 13.7955 11.4012L16.5489 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M56.5489 2.92705C56.8483 2.00574 58.1517 2.00574 58.4511 2.92705L61.2045 11.4012C61.3384 11.8132 61.7223 12.0922 62.1555 12.0922L71.0658 12.0922C72.0345 12.0922 72.4373 13.3318 71.6536 13.9012L64.445 19.1385C64.0945 19.3932 63.9479 19.8446 64.0818 20.2566L66.8352 28.7308C67.1345 29.6521 66.0801 30.4182 65.2963 29.8488L58.0878 24.6115C57.7373 24.3568 57.2627 24.3568 56.9122 24.6115L49.7037 29.8488C48.9199 30.4182 47.8655 29.6521 48.1648 28.7307L50.9182 20.2566C51.0521 19.8446 50.9055 19.3932 50.555 19.1385L43.3464 13.9012C42.5627 13.3318 42.9655 12.0922 43.9342 12.0922L52.8445 12.0922C53.2777 12.0922 53.6616 11.8132 53.7955 11.4012L56.5489 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M96.5489 2.92705C96.8483 2.00574 98.1517 2.00574 98.4511 2.92705L101.204 11.4012C101.338 11.8132 101.722 12.0922 102.156 12.0922L111.066 12.0922C112.035 12.0922 112.437 13.3318 111.654 13.9012L104.445 19.1385C104.095 19.3932 103.948 19.8446 104.082 20.2566L106.835 28.7308C107.135 29.6521 106.08 30.4182 105.296 29.8488L98.0878 24.6115C97.7373 24.3568 97.2627 24.3568 96.9122 24.6115L89.7037 29.8488C88.9199 30.4182 87.8655 29.6521 88.1648 28.7307L90.9182 20.2566C91.0521 19.8446 90.9055 19.3932 90.555 19.1385L83.3464 13.9012C82.5627 13.3318 82.9655 12.0922 83.9342 12.0922L92.8445 12.0922C93.2777 12.0922 93.6616 11.8132 93.7955 11.4012L96.5489 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M136.549 2.92705C136.848 2.00574 138.152 2.00574 138.451 2.92705L141.204 11.4012C141.338 11.8132 141.722 12.0922 142.156 12.0922L151.066 12.0922C152.035 12.0922 152.437 13.3318 151.654 13.9012L144.445 19.1385C144.095 19.3932 143.948 19.8446 144.082 20.2566L146.835 28.7308C147.135 29.6521 146.08 30.4182 145.296 29.8488L138.088 24.6115C137.737 24.3568 137.263 24.3568 136.912 24.6115L129.704 29.8488C128.92 30.4182 127.865 29.6521 128.165 28.7307L130.918 20.2566C131.052 19.8446 130.905 19.3932 130.555 19.1385L123.346 13.9012C122.563 13.3318 122.965 12.0922 123.934 12.0922L132.844 12.0922C133.278 12.0922 133.662 11.8132 133.796 11.4012L136.549 2.92705Z"
+                                        fill="#FE9303" />
+                                    <path
+                                        d="M176.549 2.92705C176.848 2.00574 178.152 2.00574 178.451 2.92705L181.204 11.4012C181.338 11.8132 181.722 12.0922 182.156 12.0922L191.066 12.0922C192.035 12.0922 192.437 13.3318 191.654 13.9012L184.445 19.1385C184.095 19.3932 183.948 19.8446 184.082 20.2566L186.835 28.7308C187.135 29.6521 186.08 30.4182 185.296 29.8488L178.088 24.6115C177.737 24.3568 177.263 24.3568 176.912 24.6115L169.704 29.8488C168.92 30.4182 167.865 29.6521 168.165 28.7307L170.918 20.2566C171.052 19.8446 170.905 19.3932 170.555 19.1385L163.346 13.9012C162.563 13.3318 162.965 12.0922 163.934 12.0922L172.844 12.0922C173.278 12.0922 173.662 11.8132 173.796 11.4012L176.549 2.92705Z"
+                                        fill="#FE9303" />
+                                </svg>
+                                <span class="text-[25px] font-bold font-judson text-[#878787]">Emery Dokidis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Videos section end-->
+    <!-- Faq section Start-->
+    <section class="faq py-28 ">
+        <div class="container max-w-[1440px] mx-auto relative">
+            <div class="absolute inset-0 bg-[#212121]/70"></div>
+            <div class="bg-cover bg-center bg-no-repeat p-5" style="background-image: url('assets/images/faq-bg.jpg')">
+                <div class="border border-white pt-16 relative z-10">
+                    <div class="text-center mx-auto">
+                        <h2 class="text-[75px] font-semibold text-[#fff]">FAQ’S</h2>
+                    </div>
+                    <div class="relative z-10 mx-auto max-w-4xl px-4 md:px-6">
+                        <div class="mb-16">
+                            <!-- FAQ Item 1 -->
+                            <div class="faq-item">
+                                <button
+                                    class="flex w-full items-center justify-between border-b border-white/50 py-10 px-8 text-left text-xl text-white focus:outline-none">
+                                    <span class="text-[25px]">To make your stay tasty</span>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="17.5" cy="17.5" r="17" stroke="#B8B8B8" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.1382 15.0293C12.3291 14.8065 12.6645 14.7807 12.8872 14.9717L17.4998 18.9253L22.1124 14.9717C22.3352 14.7807 22.6706 14.8065 22.8615 15.0293C23.0525 15.252 23.0267 15.5874 22.8039 15.7784L17.8456 20.0284C17.6466 20.1989 17.3531 20.1989 17.1541 20.0284L12.1958 15.7784C11.973 15.5874 11.9472 15.252 12.1382 15.0293Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                                <div class="faq-content">
+                                    <div class="pb-4 pt-2 text-white">
+                                        Experience our culinary delights and room service offerings designed to enhance
+                                        your stay.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 2 -->
+                            <div class="faq-item">
+                                <button
+                                    class="flex w-full items-center justify-between border-b border-white/50 py-10 px-8 text-left text-xl text-white focus:outline-none">
+                                    <span class="text-[25px]">For beautiful days as well as nights</span>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="17.5" cy="17.5" r="17" stroke="#B8B8B8" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.1382 15.0293C12.3291 14.8065 12.6645 14.7807 12.8872 14.9717L17.4998 18.9253L22.1124 14.9717C22.3352 14.7807 22.6706 14.8065 22.8615 15.0293C23.0525 15.252 23.0267 15.5874 22.8039 15.7784L17.8456 20.0284C17.6466 20.1989 17.3531 20.1989 17.1541 20.0284L12.1958 15.7784C11.973 15.5874 11.9472 15.252 12.1382 15.0293Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                                <div class="faq-content">
+                                    <div class="pb-4 pt-2 text-white">
+                                        24/7 amenities and services to make every moment of your stay memorable.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 3 -->
+                            <div class="faq-item">
+                                <button
+                                    class="flex w-full items-center justify-between border-b border-white/50 py-10 px-8 text-left text-xl text-white focus:outline-none">
+                                    <span class="text-[25px]">Place for relaxation of your body and soul</span>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="17.5" cy="17.5" r="17" stroke="#B8B8B8" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.1382 15.0293C12.3291 14.8065 12.6645 14.7807 12.8872 14.9717L17.4998 18.9253L22.1124 14.9717C22.3352 14.7807 22.6706 14.8065 22.8615 15.0293C23.0525 15.252 23.0267 15.5874 22.8039 15.7784L17.8456 20.0284C17.6466 20.1989 17.3531 20.1989 17.1541 20.0284L12.1958 15.7784C11.973 15.5874 11.9472 15.252 12.1382 15.0293Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                                <div class="faq-content">
+                                    <div class="pb-4 pt-2 text-white">
+                                        Indulge in our spa and wellness facilities designed for ultimate relaxation.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 4 -->
+                            <div class="faq-item">
+                                <button
+                                    class="flex w-full items-center justify-between border-b border-white/50 py-10 px-8 text-left text-xl text-white focus:outline-none">
+                                    <span class="text-[25px]">For children's guests</span>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="17.5" cy="17.5" r="17" stroke="#B8B8B8" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.1382 15.0293C12.3291 14.8065 12.6645 14.7807 12.8872 14.9717L17.4998 18.9253L22.1124 14.9717C22.3352 14.7807 22.6706 14.8065 22.8615 15.0293C23.0525 15.252 23.0267 15.5874 22.8039 15.7784L17.8456 20.0284C17.6466 20.1989 17.3531 20.1989 17.1541 20.0284L12.1958 15.7784C11.973 15.5874 11.9472 15.252 12.1382 15.0293Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                                <div class="faq-content">
+                                    <div class="pb-4 pt-2 text-white">
+                                        Special activities and amenities for our younger guests.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 5 -->
+                            <div class="faq-item">
+                                <button
+                                    class="flex w-full items-center justify-between border-b border-white/50 py-10 px-8 text-left text-xl text-white focus:outline-none">
+                                    <span class="text-[25px]">For children's guests</span>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="17.5" cy="17.5" r="17" stroke="#B8B8B8" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.1382 15.0293C12.3291 14.8065 12.6645 14.7807 12.8872 14.9717L17.4998 18.9253L22.1124 14.9717C22.3352 14.7807 22.6706 14.8065 22.8615 15.0293C23.0525 15.252 23.0267 15.5874 22.8039 15.7784L17.8456 20.0284C17.6466 20.1989 17.3531 20.1989 17.1541 20.0284L12.1958 15.7784C11.973 15.5874 11.9472 15.252 12.1382 15.0293Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                                <div class="faq-content">
+                                    <div class="pb-4 pt-2 text-white">
+                                        Additional children's programs and entertainment options.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq section end-->
+    <!-- Contact section Start-->
+    <section class="contact relative py-28 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('assets/images/bg-contact.jpg')">
+        <div class="absolute inset-0 bg-[#171717]/70"></div>
+        <div class="container max-w-[1440px] relative z-10 mx-auto">
+            <div class="grid gap-x-10 lg:grid-cols-2 items-center">
+                <!-- Contact Information -->
+                <div class="mb-12 lg:mb-0">
+                    <h1 class="text-[75px] font-semibold text-white">Contact Us</h1>
+                    <div class="border w-[120px] border-white"></div>
+                    <div class="space-y-8 mt-8 text-white">
+                        <div>
+                            <h2 class="text-[25px] font-semibold">Orange Megastructure LLP</h2>
+                            <p class="mt-2 text-[20px] font-normal text-white/90">
+                                Magdalla Circle, Dumas Road, Surat - 395007,<br />
+                                Gujarat, India.
+                            </p>
+                            <p class="mt-2 text-[20px] font-normal text-white/90">
+                                +91 89800 01064 / +91 89800 01098
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-[25px] font-semibold">Email</h3>
+                            <p class="mt-1 text-[20px] font-normal text-white/90">infosurat@Orangemllp.Com</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-[25px] font-semibold">Room Reservations</h3>
+                            <p class="mt-1 text-[20px] font-normal text-white/90">Reservationsurat@Orangemllp.Com</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-[25px] font-semibold">Banquet Inquiry</h3>
+                            <p class="mt-1 text-[20px] font-normal text-white/90">Bqtsurat@Orangemllp.Com</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-[25px] font-semibold">Restaurant Inquiry</h3>
+                            <p class="mt-1 text-[20px] font-normal text-white/90">Fbofficesurat@Orangemllp.Com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="border border-white p-5">
+                    <div class="bg-white p-16">
+                        <form class="space-y-4">
+                            <div class="border border-[#D1D1D1] px-6 py-6">
+                                <input type="text" placeholder="Name"
+                                    class="w-full text-[#7A7A7A] placeholder-gray-500 text-lg font-medium focus:outline-none"
+                                    required />
+                            </div>
+
+                            <div class="border border-[#D1D1D1] px-6 py-6">
+                                <input type="tel" placeholder="Phone"
+                                    class="w-full text-[#7A7A7A] text-lg font-medium placeholder-gray-500 focus:outline-none"
+                                    required />
+                            </div>
+                            <div class="border border-[#D1D1D1] px-6 py-6">
+                                <input type="text" placeholder="Subject"
+                                    class="w-full text-[#7A7A7A] text-lg font-medium placeholder-gray-500 focus:outline-none"
+                                    required />
+                            </div>
+                            <div class="border border-[#D1D1D1] px-6 py-6">
+                                <input type="email" placeholder="Email"
+                                    class="w-full text-[#7A7A7A] text-lg font-medium placeholder-gray-500 focus:outline-none"
+                                    required />
+                            </div>
+                            <div class="border border-[#D1D1D1] px-6 py-6">
+                                <textarea placeholder="Message" rows="4"
+                                    class="resize-none w-full text-lg font-medium text-[#7A7A7A] placeholder-gray-500 focus:outline-none"
+                                    required></textarea>
+                            </div>
+                        </form>
+                        <button
+                            class="rounded-full border border-black px-5 py-3 mt-8 text-black transition-all hover:bg-black/10">
+                            <span>Submit</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section End-->
+    <!-- blank section Start-->
+    <section class="blank py-14 bg-white">
+
+    </section>
+    <!-- blank section End-->
+    <!-- Footer section start-->
+    <footer class="footer bg-black text-white">
+        <div class="flex flex-wrap">
+            <div class="w-[61%] py-10 bg-[#1D1D1D]">
+
+            </div>
+            <div class="w-[39%] py-10 bg-[#2E2E2E]"></div>
+        </div>
+    </footer>
+    <!-- Footer section end-->
+
+
+
+</body>
+<!-- <script>
+        // Mobile Menu Functionality
+        const menuBtn = document.getElementById('menuBtn');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('menu-closed');
+            mobileMenu.classList.add('menu-open');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('menu-open');
+            mobileMenu.classList.add('menu-closed');
+        });
+
+        // Close menu when clicking navigation links
+        const navLinks = document.querySelectorAll('#mobileMenu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('menu-open');
+                mobileMenu.classList.add('menu-closed');
+            });
+        });
+    </script> -->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+            el: ".custom-pagination",
+            clickable: true,
+        },
+    });
+
+    // FAQ Accordion Functionality
+    document.querySelectorAll('.faq-item').forEach(item => {
+        const button = item.querySelector('button');
+
+        button.addEventListener('click', () => {
+            const wasActive = item.classList.contains('active');
+
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(otherItem => {
+                otherItem.classList.remove('active');
+            });
+
+            // Toggle current item
+            if (!wasActive) {
+                item.classList.add('active');
+            }
+        });
+
+        // Add keyboard support
+        button.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                button.click();
+            }
+        });
+    });
+</script>
+
+</html>

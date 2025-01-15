@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar in Chrome, Safari, and Edge */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-open {
+    transform: translateX(0);
+}
+
+.menu-closed {
+    transform: translateX(-100%);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -22px;
+    left: 50%;
+    background-color: #FF894A;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:active::after {
+    width: 100%;
+}
+
+.scroll-indicator {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes scale-animation {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+}
+
+.scale-animation {
+    animation: scale-animation 2s infinite;
+}
+
+.swiper-slide {
+    width: 709px !important;
+}
+
+/* Custom Swiper Pagination Styles */
+.custom-pagination {
+    bottom: -60px !important;
+    /* Adjust position */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    z-index: 50;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #D9D9D9;
+    opacity: 1;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    background-color: #FE9303;
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-item.active .faq-content {
+    max-height: 200px;
+}
+
+.faq-item.active .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease;
+}

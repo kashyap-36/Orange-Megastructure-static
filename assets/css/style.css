@@ -121,3 +121,11 @@ body {
 .arrow-icon {
     transition: transform 0.3s ease;
 }
+
+.contact {
+    background-image: url('../images/ContactUsbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}

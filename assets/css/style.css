@@ -121,3 +121,11 @@ body {
 .arrow-icon {
     transition: transform 0.3s ease;
 }
+
+/* maulik */
+
+.truncate-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

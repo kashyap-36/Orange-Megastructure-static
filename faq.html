@@ -51,7 +51,7 @@
         };
     </script>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
 
 
 </head>
@@ -66,11 +66,11 @@
         </div>
 
         <!-- Top Header -->
-        <header class="relative z-20 backdrop-blur-sm">
-            <div class="max-w-[1440px] mx-auto py-7">
+        <header class="relative z-20 backdrop-blur-sm hidden md:block">
+            <div class="max-w-[1440px] mx-auto py-7 px-10 xxl:px-0">
                 <div class="flex items-center justify-between ">
                     <!-- Menu Button -->
-                    <button id="menuBtn"
+                    <button
                         class="flex items-center space-x-3 rounded-full border border-white px-5 py-3 text-white backdrop-blur-sm transition-all hover:bg-black/30">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -89,7 +89,7 @@
                     </div>
 
                     <!-- Booking Button -->
-                    <button id="menuBtn"
+                    <button
                         class="flex items-center space-x-3 rounded-full border border-white px-4 py-3 text-white backdrop-blur-sm transition-all hover:bg-black/30">
                         <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -103,10 +103,10 @@
             </div>
 
             <!-- Navigation -->
-            <nav class="border-y border-white/50 backdrop-blur-sm">
+            <nav class="border-y border-white backdrop-blur-sm">
                 <div class="container mx-auto px-4">
                     <ul class="flex justify-center flex-wrap space-x-14 py-5">
-                        <li><a href="index.html" class="nav-link text-[15px] text-white hover:text-white/90">HOME</a>
+                        <li><a href="/" class="nav-link text-[15px] text-white hover:text-white/90">HOME</a>
                         </li>
                         <li><a href="about.html" class="nav-link text-[15px] text-white hover:text-white/90">ABOUT
                                 US</a></li>
@@ -124,32 +124,83 @@
                 </div>
             </nav>
         </header>
+        <!-- responsive header -->
+        <header class="relative z-20 backdrop-blur-sm responsive-header px-6 md:hidden">
+            <div class="max-w-[1440px] mx-auto py-7">
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <div class="text-center">
+                        <img src="assets/images/logo.png" alt="Orange Megastructure Logo">
+                    </div>
 
-        <!-- Mobile Menu -->
-        <!-- <div id="mobileMenu"
-            class="fixed inset-0 z-50 transform bg-black/95 transition-transform duration-300 ease-in-out menu-closed">
-            <div class="flex h-full flex-col">
-                <div class="flex justify-end p-6">
-                    <button id="closeMenuBtn" class="text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
+                    <!-- Menu Button -->
+                    <button id="menuBtn" class="">
+                        <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_104_29922)">
+                                <path
+                                    d="M0 1.74979C0.0575671 1.716 0.0487106 1.64843 0.0664236 1.59533C0.221412 1.15609 0.60224 0.856832 1.03621 0.847178C1.08935 0.847178 1.14691 0.847178 1.20005 0.847178C6.0534 0.842351 10.9112 0.852005 15.7645 0.837524C16.3623 0.837524 16.845 1.14161 16.9823 1.77875C16.9823 1.78358 16.9911 1.78358 16.9956 1.78358C16.9956 1.93803 16.9956 2.09732 16.9956 2.25178C16.9424 2.28074 16.9469 2.34348 16.9336 2.38693C16.7786 2.84547 16.3978 3.14473 15.9461 3.15439C15.8929 3.15439 15.8354 3.15439 15.7822 3.15439C10.9333 3.15439 6.0844 3.15439 1.23548 3.15439C0.562386 3.15439 0.287835 2.95166 0.0265694 2.26626C0.0221412 2.2566 0.00885647 2.2566 0 2.24695C0 2.08766 0 1.91873 0 1.74979Z"
+                                    fill="white" />
+                                <path
+                                    d="M17.0014 13.8357C16.9483 13.8647 16.9527 13.9274 16.9394 13.9709C16.7844 14.4294 16.4036 14.7287 15.9519 14.7383C15.8988 14.7383 15.8412 14.7383 15.7881 14.7383C10.9392 14.7383 6.09026 14.7383 1.24134 14.7383C0.568245 14.7383 0.293695 14.5356 0.0324288 13.8502C0.0280006 13.8405 0.0147158 13.8405 0.00585938 13.8309C0.00585938 13.6619 0.00585938 13.493 0.00585938 13.3241C0.0634264 13.2903 0.05457 13.2227 0.0722829 13.1696C0.227271 12.7304 0.6081 12.4311 1.03764 12.4215C1.09078 12.4215 1.14834 12.4215 1.20148 12.4215C6.05483 12.4215 10.9126 12.4263 15.766 12.4166C16.3638 12.4166 16.8464 12.7207 16.9837 13.3579C16.9837 13.3627 16.9926 13.3627 16.997 13.3627C17.0014 13.522 17.0014 13.6812 17.0014 13.8357Z"
+                                    fill="white" />
+                                <path
+                                    d="M17.0014 8.04469C16.9483 8.07365 16.9527 8.1364 16.9394 8.17984C16.7844 8.63839 16.4036 8.93765 15.9519 8.9473C15.8988 8.9473 15.8412 8.9473 15.7881 8.9473C10.9392 8.9473 6.09026 8.9473 1.24134 8.9473C0.568245 8.9473 0.293695 8.74457 0.0324288 8.05917C0.0280006 8.04952 0.0147158 8.04952 0.00585938 8.03986C0.00585938 7.87092 0.00585938 7.70199 0.00585938 7.53305C0.0634264 7.49926 0.05457 7.43169 0.0722829 7.37859C0.227271 6.93935 0.6081 6.64009 1.03764 6.63044C1.09078 6.63044 1.14834 6.63044 1.20148 6.63044C6.05483 6.63044 10.9126 6.63526 15.766 6.62561C16.3638 6.62561 16.8464 6.9297 16.9837 7.56684C16.9837 7.57166 16.9926 7.57166 16.997 7.57166C17.0014 7.73095 17.0014 7.89023 17.0014 8.04469Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_104_29922">
+                                    <rect width="17" height="13.9012" fill="white" transform="translate(0 0.837524)" />
+                                </clipPath>
+                            </defs>
                         </svg>
                     </button>
                 </div>
-                <div class="flex flex-col items-center justify-center flex-1 space-y-8">
-                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">HOME</a>
-                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">ABOUT US</a>
-                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">STAY</a>
-                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">DINING</a>
-                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">MEETING &
-                        CONVENTIONS</a>
-                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">FAQ'S</a>
-                    <a href="#" class="text-lg text-white hover:text-orange-400 transition-colors">CONTACT US</a>
+
+
+                <!-- Mobile Menu -->
+                <div id="mobileMenu"
+                    class="fixed inset-0 bg-black z-40 transform transition-transform duration-300 menu-closed">
+                    <div class="flex flex-col min-h-screen">
+                        <div class="flex justify-end px-6 py-8">
+                            <button id="closeMenuBtn" class="text-white ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <nav class="flex-1 flex items-center bg-black justify-center">
+                            <ul class="space-y-6 text-center">
+                                <li><a href="/"
+                                        class="text-white text-xl hover:text-white/80 transition-colors">HOME</a>
+                                </li>
+                                <li><a href="about.html"
+                                        class="text-white text-xl hover:text-white/80 transition-colors">ABOUT
+                                        US</a></li>
+                                <li><a href="stay.html"
+                                        class="text-white text-xl hover:text-white/80 transition-colors">STAY</a>
+                                </li>
+                                <li><a href="dining.html"
+                                        class="text-white text-xl hover:text-white/80 transition-colors">DINING</a>
+                                </li>
+                                <li><a href="mitting.html"
+                                        class="text-white text-xl hover:text-white/80 transition-colors">MEETING
+                                        &
+                                        CONVENTIONS</a></li>
+                                <li><a href="faq.html"
+                                        class="text-white text-xl hover:text-white/80 transition-colors">FAQ'S</a>
+                                </li>
+                                <li><a href="contact.html"
+                                        class="text-white text-xl hover:text-white/80 transition-colors">CONTACT
+                                        US</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div> -->
+        </header>
+
 
         <!-- Hero Content -->
         <main class="relative z-10 flex h-[50vh] flex-col gap-y-11 items-center justify-center px-4 text-center">
@@ -342,50 +393,12 @@
     <!-- Footer section start-->
     <div id="footer"></div>
     <!-- Footer section end-->
-
-
-
 </body>
-<!-- <script>
-        // Mobile Menu Functionality
-        const menuBtn = document.getElementById('menuBtn');
-        const closeMenuBtn = document.getElementById('closeMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('menu-closed');
-            mobileMenu.classList.add('menu-open');
-        });
-
-        closeMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('menu-open');
-            mobileMenu.classList.add('menu-closed');
-        });
-
-        // Close menu when clicking navigation links
-        const navLinks = document.querySelectorAll('#mobileMenu a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('menu-open');
-                mobileMenu.classList.add('menu-closed');
-            });
-        });
-    </script> -->
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-            el: ".custom-pagination",
-            clickable: true,
-        },
-    });
-
     // FAQ Accordion Functionality
     document.querySelectorAll('.faq-item').forEach(item => {
         const button = item.querySelector('button');

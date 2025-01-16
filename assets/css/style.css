@@ -77,10 +77,6 @@ body {
     animation: scale-animation 2s infinite;
 }
 
-.swiper-slide {
-    width: 709px !important;
-}
-
 /* Custom Swiper Pagination Styles */
 .custom-pagination {
     bottom: -60px !important;

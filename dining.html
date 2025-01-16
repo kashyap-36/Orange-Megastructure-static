@@ -85,7 +85,7 @@
 
 <body>
     <!-- Hero section start-->
-    <div class="relative h-screen overflow-hidden">
+    <div class="relative h-[50vh] md:h-screen overflow-hidden">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style="background-image: url('assets/images/dining-hero-bg.jpg')">
@@ -93,7 +93,7 @@
         </div>
 
         <!-- Top Header -->
-        <header class="relative z-20 backdrop-blur-sm hidden md:block">
+        <header class="relative z-50 backdrop-blur-sm hidden md:block">
             <div class="max-w-[1440px] mx-auto py-7 px-10 xxl:px-0">
                 <div class="flex items-center justify-between ">
                     <!-- Menu Button -->
@@ -152,12 +152,12 @@
             </nav>
         </header>
         <!-- responsive header -->
-        <header class="relative z-20 backdrop-blur-sm responsive-header px-6 md:hidden">
+        <header class="relative z-50 backdrop-blur-sm responsive-header px-6 md:hidden">
             <div class="max-w-[1440px] mx-auto py-7">
                 <div class="flex items-center justify-between">
                     <!-- Logo -->
-                    <div class="text-center">
-                        <img src="assets/images/logo.png" alt="Orange Megastructure Logo">
+                    <div class="text-center w-[176px]">
+                        <img src="assets/images/logo.png" alt="Orange Megastructure Logo" class="w-full">
                     </div>
 
                     <!-- Menu Button -->
@@ -182,59 +182,56 @@
                         </svg>
                     </button>
                 </div>
-
-
                 <!-- Mobile Menu -->
-                <div id="mobileMenu"
-                    class="fixed inset-0 bg-black z-40 transform transition-transform duration-300 menu-closed">
-                    <div class="flex flex-col min-h-screen">
-                        <div class="flex justify-end px-6 py-8">
-                            <button id="closeMenuBtn" class="text-white ">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
-                        <nav class="flex-1 flex items-center bg-black justify-center">
-                            <ul class="space-y-6 text-center">
-                                <li><a href="/"
-                                        class="text-white text-xl hover:text-white/80 transition-colors">HOME</a>
-                                </li>
-                                <li><a href="about.html"
-                                        class="text-white text-xl hover:text-white/80 transition-colors">ABOUT
-                                        US</a></li>
-                                <li><a href="stay.html"
-                                        class="text-white text-xl hover:text-white/80 transition-colors">STAY</a>
-                                </li>
-                                <li><a href="dining.html"
-                                        class="text-white text-xl hover:text-white/80 transition-colors">DINING</a>
-                                </li>
-                                <li><a href="mitting.html"
-                                        class="text-white text-xl hover:text-white/80 transition-colors">MEETING
-                                        &
-                                        CONVENTIONS</a></li>
-                                <li><a href="faq.html"
-                                        class="text-white text-xl hover:text-white/80 transition-colors">FAQ'S</a>
-                                </li>
-                                <li><a href="contact.html"
-                                        class="text-white text-xl hover:text-white/80 transition-colors">CONTACT
-                                        US</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+
             </div>
         </header>
-
+        <div id="mobileMenu"
+            class="fixed inset-0 h-screen bg-black z-50 transform transition-transform duration-300 menu-closed md:hidden">
+            <div class="flex flex-col ">
+                <div class="flex justify-end px-6 py-8">
+                    <button id="closeMenuBtn" class="text-white ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex-1 flex items-center bg-black justify-center">
+                    <ul class="space-y-6 text-center">
+                        <li><a href="/" class="text-white text-xl hover:text-white/80 transition-colors">HOME</a>
+                        </li>
+                        <li><a href="about.html" class="text-white text-xl hover:text-white/80 transition-colors">ABOUT
+                                US</a></li>
+                        <li><a href="stay.html"
+                                class="text-white text-xl hover:text-white/80 transition-colors">STAY</a>
+                        </li>
+                        <li><a href="dining.html"
+                                class="text-white text-xl hover:text-white/80 transition-colors">DINING</a>
+                        </li>
+                        <li><a href="mitting.html"
+                                class="text-white text-xl hover:text-white/80 transition-colors">MEETING
+                                &
+                                CONVENTIONS</a></li>
+                        <li><a href="faq.html"
+                                class="text-white text-xl hover:text-white/80 transition-colors">FAQ'S</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-white text-xl hover:text-white/80 transition-colors">CONTACT
+                                US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
         <!-- Hero Content -->
-        <main class="relative z-10 flex h-[50vh] flex-col gap-y-11 items-center justify-center px-4 text-center">
-            <h1 class="mb-4 text-5xl font-bold text-white md:text-6xl lg:text-7xl">
+        <main
+            class="relative z-20 flex h-[20vh] md:h-[50vh] flex-col gap-y-5 md:gap-y-11 items-center justify-center px-4 text-center">
+            <h1 class="mb-2 lg:mb-4 text-3xl font-bold text-white md:text-6xl lg:text-7xl">
                 Dining
             </h1>
-            <p class="text-white/90 text-4xl">
+            <p class="text-white/90 text-xs md:text-base lg:text-4xl">
                 Your Favourite Place. Our Family Story.
             </p>
         </main>
@@ -243,7 +240,7 @@
         <div class="absolute bottom-0 left-[16%] z-10 -translate-x-1/2">
             <div class="relative">
                 <svg width="168" height="168" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="">
+                    class="md:w-[168px] md:h-[168px] w-[80px] h-[80px]">
                     <mask id="mask0_48_39319" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
                         width="168" height="168">
                         <path d="M168 0H0V168H168V0Z" fill="white" />
@@ -262,19 +259,17 @@
                 </svg>
                 <button class="absolute top-1/3 left-1/3">
                     <div class="flex flex-col items-center text-white">
-                        <span class="text-lg">Hotels</span>
-                        <span class="text-lg">Info</span>
+                        <span class="text-[10px] md:text-lg">Hotels</span>
+                        <span class="text-[10px] md:text-lg">Info</span>
                     </div>
                 </button>
             </div>
-
-
         </div>
 
         <!-- Scroll Indicator -->
         <div class="absolute bottom-10 left-1/2 z-10 -translate-x-1/2">
             <div class="scroll-indicator">
-                <svg width="85" height="265" viewBox="0 0 85 265" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="85" height="265" class="md:w-[85px] md:h-[265px] w-[50px] h-[156px]" viewBox="0 0 85 265" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line opacity="0.7" x1="41" y1="-4.37114e-08" x2="41" y2="181" stroke="url(#paint0_linear_48_39337)"
                         stroke-width="2" stroke-dasharray="10 10" />
                     <circle opacity="0.7" cx="42.5" cy="222.5" r="41.5" fill="#4C4139" stroke="#FF894A"

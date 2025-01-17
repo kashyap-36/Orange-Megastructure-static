@@ -269,7 +269,8 @@
         <!-- Scroll Indicator -->
         <div class="absolute bottom-10 left-1/2 z-10 -translate-x-1/2">
             <div class="scroll-indicator">
-                <svg width="85" height="265" class="md:w-[85px] md:h-[265px] w-[50px] h-[156px]" viewBox="0 0 85 265" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="85" height="265" class="md:w-[85px] md:h-[265px] w-[50px] h-[156px]" viewBox="0 0 85 265"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line opacity="0.7" x1="41" y1="-4.37114e-08" x2="41" y2="181" stroke="url(#paint0_linear_48_39337)"
                         stroke-width="2" stroke-dasharray="10 10" />
                     <circle opacity="0.7" cx="42.5" cy="222.5" r="41.5" fill="#4C4139" stroke="#FF894A"
@@ -299,161 +300,172 @@
     <!-- blank section Start-->
     <section class="blank py-14 bg-white">
         <div>
-            <h1 class="text-5xl font-semibold text-center text-[#333333]">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#333333] mb-8 md:mb-12">
                 Restaurants
             </h1>
         </div>
 
-        <div class="relative max-w-full w-full px-4 py-12">
-            <!-- Swiper -->
-            <div class="swiper mySwiper py-8">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <img src="./assets/images/ding-1.png" alt="ding-1" class="slide-img">
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <img src="./assets/images/dinig-2.png" alt="ding-1" class="slide-img">
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <img src="./assets/images/dinig-3.png" alt="ding-1" class="slide-img">
-                    </div>
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <img src="./assets/images/ding-1.png" alt="ding-1" class="slide-img">
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <img src="./assets/images/dinig-2.png" alt="ding-1" class="slide-img">
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <img src="./assets/images/dinig-3.png" alt="ding-1" class="slide-img">
+        <section class="restaurants-slider relative w-full px-4 md:py-12 lg:py-16 overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <img src="./assets/images/ding-1.png" alt="Restaurant image 1"
+                                class="w-full h-auto object-cover">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <img src="./assets/images/dinig-2.png" alt="Restaurant image 2"
+                                class="w-full h-auto object-cover">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <img src="./assets/images/dinig-3.png" alt="Restaurant image 3"
+                                class="w-full h-auto object-cover">
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <img src="./assets/images/ding-1.png" alt="Restaurant image 4"
+                                class="w-full h-auto object-cover">
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide">
+                            <img src="./assets/images/dinig-2.png" alt="Restaurant image 5"
+                                class="w-full h-auto object-cover">
+                        </div>
+                        <!-- Slide 6 -->
+                        <div class="swiper-slide">
+                            <img src="./assets/images/dinig-3.png" alt="Restaurant image 6"
+                                class="w-full h-auto object-cover">
+                        </div>
                     </div>
                 </div>
-                <span
-                    class="font-poppins text-[135px] font-semibold leading-[247.5px] text-center text-[#a58b7c] absolute top-[30%] left-[10%] sm:text-[90px] sm:top-[25%] sm:left-[15%] xl:text-[135px] xl:block hidden">
-                    Resta
-                </span>
-                <span
-                    class="font-poppins text-[135px] font-semibold leading-[247.5px] text-center text-[#a58b7c] absolute top-[30%] right-[10%] sm:text-[90px] sm:top-[25%] sm:right-[15%] xl:text-[135px] xl:block hidden">
-                    urants
-                </span>
             </div>
-        </div>
+
+            <span
+                class="font-poppins text-5xl md:text-7xl lg:text-9xl font-semibold text-[#a58b7c] absolute top-1/2 left-4 md:left-8 transform -translate-y-1/2 opacity-20 md:opacity-100 pointer-events-none">
+                Resta
+            </span>
+            <span
+                class="font-poppins text-5xl md:text-7xl lg:text-9xl font-semibold text-[#a58b7c] absolute top-1/2 right-4 md:right-8 transform -translate-y-1/2 opacity-20 md:opacity-100 pointer-events-none">
+                urants
+            </span>
+        </section>
     </section>
 
-    <section class="blank py-14 bg-white">
-        <div class="max-w-7xl mx-auto px-4 py-12">
-            <h1
-                class="font-poppins text-3xl sm:text-4xl md:text-5xl font-semibold leading-[52.5px] text-center text-[#333333] py-2">
+    <section class="blank md:py-14 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:py-12">
+            <h2
+                class="font-poppins text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight md:leading-[1.2] text-center text-[#333333] mb-4 md:mb-6">
                 Unprecedented Dining Possibilities
-            </h1>
+            </h2>
             <p
-                class="font-poppins text-lg sm:text-xl md:text-2xl font-normal leading-[32px] text-center text-[#333333] py-2">
+                class="font-poppins text-base md:text-lg lg:text-2xl font-normal leading-relaxed md:leading-[32px] text-center text-[#333333]">
                 Experience the all new culinary world at the Hotel - different, younger, wilder. The new exquisitely
                 delicious and light cuisine turns your visit to our restaurant into an exclusive moment - whether it is
                 for a sumptuous breakfast or traditional afternoon tea, a light and healthy lunch or a fabulous dinner.
             </p>
         </div>
         <div class="max-w-7xl mx-auto px-4 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <!-- Image Section -->
                 <div class="p-4">
                     <img src="./assets/images/all-day-ding-main.png" class="w-full h-auto p-2" alt="main-ding-img">
-                    <img src="./assets/images/all-day-ding-1.png" class="p-2 w-full h-auto" alt="main-ding-img">
-                    <img src="./assets/images/all-day-ding-2.png" class="p-2 w-full h-auto" alt="main-ding-img">
-                    <img src="./assets/images/all-day-ding-3.png" class="p-2 w-full h-auto" alt="main-ding-img">
-                    <img src="./assets/images/all-day-ding-4.png" class="p-2 w-full h-auto" alt="main-ding-img">
+                    <img src="./assets/images/all-day-ding-1.png" class="w-full h-auto p-2" alt="main-ding-img">
+                    <img src="./assets/images/all-day-ding-2.png" class="w-full h-auto p-2" alt="main-ding-img">
+                    <img src="./assets/images/all-day-ding-3.png" class="w-full h-auto p-2" alt="main-ding-img">
+                    <img src="./assets/images/all-day-ding-4.png" class="w-full h-auto p-2" alt="main-ding-img">
                 </div>
 
-                <div class="p-4 flex  items-center">
-                    <!-- heading -->
-                    <div class="text-center">
+                <!-- Content Section -->
+                <div class="p-4 flex flex-col items-center space-y-10">
+                    <!-- Heading Section -->
+                    <div class="text-center space-y-4">
                         <h1
-                            class="font-poppins text-3xl sm:text-4xl md:text-5xl font-medium leading-[75px] text-[#333333] py-2">
+                            class="font-poppins text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-[#333333] py-2">
                             All Day Dining
                         </h1>
                         <h3
-                            class="font-poppins text-2xl sm:text-3xl md:text-4xl font-medium leading-[45px] text-[#FF3232] py-2">
+                            class="font-poppins text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#FF3232] py-2">
                             Surat
                         </h3>
-                        <p
-                            class="font-poppins text-lg sm:text-xl md:text-2xl font-normal leading-[36px] text-[#616161] pb-10">
+                        <p class="font-poppins text-base sm:text-lg md:text-xl lg:text-2xl font-normal text-[#616161]">
                             All Day Dining Extent The Mellow Sounds Of In The Background Along With Deep Cushioned Sofas
                             And Soft Lighting All Combine To Create A Soothing Ambiance.
                         </p>
                         <hr class="border-b-2 w-[180px] mx-auto border-[#e0e0e0]" />
+                    </div>
 
-                        <div class="p-8">
+                    <!-- Repeated Sections -->
+                    <div class="space-y-8">
+                        <!-- Single Item -->
+                        <div class="text-center">
                             <h2
-                                class="font-poppins text-3xl sm:text-4xl md:text-5xl font-medium leading-[75px] text-center text-[#AAAAAA] py-2">
+                                class="font-poppins text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#AAAAAA]">
                                 MMS
                             </h2>
                             <h3
-                                class="font-poppins text-2xl sm:text-3xl md:text-4xl font-medium leading-[45px] text-center text-[#FF3232] py-2">
+                                class="font-poppins text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-[#FF3232] py-2">
                                 Surat
                             </h3>
                             <p
-                                class="font-poppins text-lg sm:text-xl md:text-2xl font-normal leading-[36px] text-center text-[#616161] pb-10">
+                                class="font-poppins text-base sm:text-lg md:text-xl lg:text-2xl font-normal text-[#616161]">
                                 All Day Dining Extent The Mellow Sounds Of In The Background Along With Deep Cushioned
-                                Sofas
-                                And Soft Lighting All Combine To Create A Soothing Ambiance.
+                                Sofas And Soft Lighting All Combine To Create A Soothing Ambiance.
                             </p>
                             <hr class="border-b-2 w-[180px] mx-auto border-[#e0e0e0]" />
                         </div>
 
-                        <div class="p-8">
+                        <!-- Repeated Items -->
+                        <div class="text-center">
                             <h2
-                                class="font-poppins text-3xl sm:text-4xl md:text-5xl font-medium leading-[75px] text-center text-[#AAAAAA] py-2">
+                                class="font-poppins text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#AAAAAA]">
                                 Ziba
                             </h2>
                             <h3
-                                class="font-poppins text-2xl sm:text-3xl md:text-4xl font-medium leading-[45px] text-center text-[#FF3232] py-2">
+                                class="font-poppins text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-[#FF3232] py-2">
                                 Surat
                             </h3>
                             <p
-                                class="font-poppins text-lg sm:text-xl md:text-2xl font-normal leading-[36px] text-center text-[#616161] pb-10">
+                                class="font-poppins text-base sm:text-lg md:text-xl lg:text-2xl font-normal text-[#616161]">
                                 All Day Dining Extent The Mellow Sounds Of In The Background Along With Deep Cushioned
-                                Sofas
-                                And Soft Lighting All Combine To Create A Soothing Ambiance.
+                                Sofas And Soft Lighting All Combine To Create A Soothing Ambiance.
                             </p>
                             <hr class="border-b-2 w-[180px] mx-auto border-[#e0e0e0]" />
                         </div>
 
-                        <div class="p-8">
+                        <div class="text-center">
                             <h2
-                                class="font-poppins text-3xl sm:text-4xl md:text-5xl font-medium leading-[75px] text-center text-[#AAAAAA] py-2">
+                                class="font-poppins text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#AAAAAA]">
                                 Crystal Lounge
                             </h2>
                             <h3
-                                class="font-poppins text-2xl sm:text-3xl md:text-4xl font-medium leading-[45px] text-center text-[#FF3232] py-2">
+                                class="font-poppins text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-[#FF3232] py-2">
                                 Surat
                             </h3>
                             <p
-                                class="font-poppins text-lg sm:text-xl md:text-2xl font-normal leading-[36px] text-center text-[#616161] pb-10">
+                                class="font-poppins text-base sm:text-lg md:text-xl lg:text-2xl font-normal text-[#616161]">
                                 All Day Dining Extent The Mellow Sounds Of In The Background Along With Deep Cushioned
-                                Sofas
-                                And Soft Lighting All Combine To Create A Soothing Ambiance.
+                                Sofas And Soft Lighting All Combine To Create A Soothing Ambiance.
                             </p>
                             <hr class="border-b-2 w-[180px] mx-auto border-[#e0e0e0]" />
                         </div>
 
-                        <div class="p-8">
+                        <div class="text-center">
                             <h2
-                                class="font-poppins text-3xl sm:text-4xl md:text-5xl font-medium leading-[75px] text-center text-[#AAAAAA] py-2">
+                                class="font-poppins text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-[#AAAAAA]">
                                 Club Cafe
                             </h2>
                             <h3
-                                class="font-poppins text-2xl sm:text-3xl md:text-4xl font-medium leading-[45px] text-center text-[#FF3232] py-2">
+                                class="font-poppins text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-[#FF3232] py-2">
                                 Surat
                             </h3>
                             <p
-                                class="font-poppins text-lg sm:text-xl md:text-2xl font-normal leading-[36px] text-center text-[#616161] pb-10">
+                                class="font-poppins text-base sm:text-lg md:text-xl lg:text-2xl font-normal text-[#616161]">
                                 All Day Dining Extent The Mellow Sounds Of In The Background Along With Deep Cushioned
-                                Sofas
-                                And Soft Lighting All Combine To Create A Soothing Ambiance.
+                                Sofas And Soft Lighting All Combine To Create A Soothing Ambiance.
                             </p>
                             <hr class="border-b-2 w-[180px] mx-auto border-[#e0e0e0]" />
                         </div>
@@ -461,6 +473,7 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!-- blank section End-->
     <!-- Footer section start-->
@@ -473,34 +486,26 @@
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3, // Show 3 slides
-        centeredSlides: true, // Center the middle slide
+        slidesPerView: 1,
+        centeredSlides: true,
         loop: true,
-        spaceBetween: 30, // Space between slides
+        spaceBetween: 20,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
         breakpoints: {
-            // When screen width is <= 576px (small screens like mobile)
-            576: {
-                slidesPerView: 1, // Show 1 slide on mobile
-                spaceBetween: 0, // Less space between slides
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
             },
-            // When screen width is >= 768px (tablet)
             768: {
-                slidesPerView: 1, // Show 1 slide on tablet (portrait mode)
-                spaceBetween: 20, // Adjust space between slides
+                slidesPerView: 2,
+                spaceBetween: 30,
             },
-            // When screen width is >= 1024px (tablet landscape or smaller laptop)
             1024: {
-                slidesPerView: 2, // Show 2 slides on tablets or smaller laptops
-                spaceBetween: 20, // Adjust space between slides
-            },
-            // When screen width is >= 1200px (larger screens like desktops)
-            1200: {
-                slidesPerView: 3, // Show 3 slides on larger screens
-                spaceBetween: 30, // Adjust space between slides
+                slidesPerView: 3,
+                spaceBetween: 40,
             },
         }
     });
